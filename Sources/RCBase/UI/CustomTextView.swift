@@ -5,6 +5,7 @@
 //  Created by 林小鹏 on 2022/1/13.
 //  添加 textView  占位符
 //  
+import UIKit
 
 class CustomTextView: UITextView {
     private var _placeholder: String!
@@ -25,7 +26,7 @@ class CustomTextView: UITextView {
         if hasText {
             return // 如果输入框内有文字，直接返回
         }
-        _placeholder.draw(in: CGRect(x: 5, y: 7, width: rect.width - 10, height: rect.height), withAttributes: [NSAttributedString.Key.foregroundColor: rColor.textColorGrayA9A7B4, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)]) // 占位符的位置坐标，字体大小以及绘制区域大小，如果你对占位符的大小和位置不满意，请在这修改
+        _placeholder.draw(in: CGRect(x: 5, y: 7, width: rect.width - 10, height: rect.height), withAttributes: [NSAttributedString.Key.foregroundColor: rColor.RGB0X(hexValue: 0xA9A7B4), NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)]) // 占位符的位置坐标，字体大小以及绘制区域大小，如果你对占位符的大小和位置不满意，请在这修改
     }
 
     @objc func textDidChange() {

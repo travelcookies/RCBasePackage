@@ -5,9 +5,9 @@
 //  Created by 林小鹏 on 2021/12/24.
 //  判断是否开启定位
 
-import Foundation
 import CoreLocation
-
+import Foundation
+import UIKit
 struct rLocation {
     /**
      跳转定位设置
@@ -18,7 +18,9 @@ struct rLocation {
         alert.addAction(UIAlertAction(title: "去设置", style: .destructive, handler: { _ in
             let settingUrl = URL(string: UIApplication.openSettingsURLString)!
             if UIApplication.shared.canOpenURL(settingUrl) {
-                UIApplication.shared.open(settingUrl, options: [:], completionHandler: nil)
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(settingUrl, options: [:], completionHandler: nil)
+                }
             }
         }))
         UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
