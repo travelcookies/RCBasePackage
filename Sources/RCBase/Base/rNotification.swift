@@ -8,11 +8,12 @@
 import Foundation
 
 struct rNotification {
-    ///通知name - 登录
-    static let login = "NOTIFICATION_LOG_IN"
-    ///通知name - 登出
-    static let logout = "NOTIFICATION_LOGIN_OUT"
-    /** 显示登录页面通知 */
-    static let showLoginPage = "NOTIFICATION_LOGIN_page_show"
+//    ///通知name - 登录
+//    static let login = "NOTIFICATION_LOG_IN"
+//    ///通知name - 登出
+//    static let logout = "NOTIFICATION_LOGIN_OUT"
+//    /** 显示登录页面通知 */
+//    static let showLoginPage = "NOTIFICATION_LOGIN_page_show"
+    
 
 }
