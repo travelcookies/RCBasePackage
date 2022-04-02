@@ -28,7 +28,7 @@ class RCBaseTests: XCTestCase {
 
     func testStringExtension() throws {
 
-        let m = "1234567"
+//        let m = "1234567"
 //        m.2
 
     }

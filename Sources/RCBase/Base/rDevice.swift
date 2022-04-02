@@ -9,9 +9,11 @@
 import Foundation
 import UIKit
 
-struct rConstantFile {
+struct rDevice {
+    static let share = rDevice()
+
     /// 手机型号
-    let DEVICE_NAME: String = {
+    let name: String = {
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
@@ -62,7 +64,6 @@ struct rConstantFile {
         case "iPad4,7", "iPad4,8", "iPad4,9": return "iPad Mini 3"
         case "iPad5,1", "iPad5,2": return "iPad Mini 4"
         case "iPad6,7", "iPad6,8": return "iPad Pro"
-
         case "iPad6,3", "iPad6,4": return "iPad Pro (9.7-inch)"
         case "iPad7,1", "iPad7,2": return "iPad Pro (12.9-inch) (2nd generation)"
         case "iPad7,4", "iPad7,3": return "iPad Pro (10.5-inch)"
@@ -78,4 +79,24 @@ struct rConstantFile {
         }
 
     }()
+
+    /// 获取设备名称 例如：梓辰的手机
+    let deviceName = UIDevice.current.name
+    /// 获取系统名称 例如：iPhone OS
+    let sysName = UIDevice.current.systemName
+    /// 获取系统版本 例如：9.2
+    let sysVersion = UIDevice.current.systemVersion
+    /// 获取设备唯一标识符 例如：FBF2306E-A0D8-4F4B-BDED-9333B627D3E6
+    let deviceUUID = UIDevice.current.identifierForVendor?.uuidString
+    /// 获取设备的型号 例如：iPhone
+    let deviceModel = UIDevice.current.model
+
+    var infoDic = Bundle.main.infoDictionary
+    /// 获取App的版本
+//    let appVersion = rDevice.share.infoDic?["CFBundleShortVersionString"] ?? ""
+    ////    self.infoDic?["CFBundleShortVersionString"]
+//    /// 获取App的build版本
+//    let appBuildVersion = rDevice.share.infoDic?["CFBundleVersion"] ?? ""
+//    /// 获取App的名称
+//    let appName = rDevice.share.infoDic?["CFBundleDisplayName"] ?? ""
 }
