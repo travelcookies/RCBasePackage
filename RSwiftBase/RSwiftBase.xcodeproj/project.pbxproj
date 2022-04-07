@@ -104,6 +104,13 @@
 			isa = PBXGroup;
 			children = (
 				7361CCDF27FECD6F0062147D /* RSwiftBase.h */,
+				7361CD2A27FED3F70062147D /* rFont.swift */,
+				7361CD2B27FED3F70062147D /* rNotification.swift */,
+				7361CD2C27FED3F70062147D /* rColor.swift */,
+				7361CD2D27FED3F70062147D /* rTime.swift */,
+				7361CD2E27FED3F70062147D /* rDevice.swift */,
+				7361CD2F27FED3F70062147D /* rLocation.swift */,
+				7361CD3027FED3F70062147D /* rScreen.swift */,
 				7361CD2927FED3F70062147D /* Base */,
 				7361CD1F27FED3F70062147D /* Extension */,
 				7361CCE027FECD6F0062147D /* RSwiftBase.docc */,
@@ -138,13 +145,6 @@
 		7361CD2927FED3F70062147D /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				7361CD2A27FED3F70062147D /* rFont.swift */,
-				7361CD2B27FED3F70062147D /* rNotification.swift */,
-				7361CD2C27FED3F70062147D /* rColor.swift */,
-				7361CD2D27FED3F70062147D /* rTime.swift */,
-				7361CD2E27FED3F70062147D /* rDevice.swift */,
-				7361CD2F27FED3F70062147D /* rLocation.swift */,
-				7361CD3027FED3F70062147D /* rScreen.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
