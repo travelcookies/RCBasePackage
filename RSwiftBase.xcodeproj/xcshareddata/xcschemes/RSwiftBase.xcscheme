@@ -20,6 +20,20 @@
                ReferencedContainer = "container:RSwiftBase.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7361CCE527FECD6F0062147D"
+               BuildableName = "RSwiftBaseTests.xctest"
+               BlueprintName = "RSwiftBaseTests"
+               ReferencedContainer = "container:RSwiftBase.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
