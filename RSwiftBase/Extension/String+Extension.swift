@@ -9,7 +9,7 @@
 import CommonCrypto
 import Foundation
 
-extension String {
+public extension String {
     var md5: String {
         let ccharArray = cString(using: String.Encoding.utf8)
         var uint8Array = [UInt8](repeating: 0, count: Int(CC_MD5_DIGEST_LENGTH))

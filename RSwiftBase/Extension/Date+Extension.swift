@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - 获取日期各种值
 
-extension Date {
+public extension Date {
     // MARK: 年
 
     func year() -> Int {

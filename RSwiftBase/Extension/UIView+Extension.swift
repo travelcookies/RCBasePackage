@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-extension UIView {
+public extension UIView {
     /**
      添加圆角 某个方向
      topLeft

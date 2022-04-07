@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+public extension UIView {
     //  圆角
     @IBInspectable var rcornerRadius: CGFloat {
         get {

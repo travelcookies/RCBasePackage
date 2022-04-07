@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSInteger {
+public extension NSInteger {
     func timeToStringFormatterValue() -> String {
         if self < 60 {
             return String(format: "%d秒", self)

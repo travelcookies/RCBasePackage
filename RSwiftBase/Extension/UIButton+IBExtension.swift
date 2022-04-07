@@ -8,9 +8,9 @@
 
 import Foundation
 import UIKit
-extension UIButton {
+public extension UIButton {
     //  高亮
-    @IBInspectable var highlightColor: UIColor {
+     @IBInspectable var highlightColor: UIColor {
         get {
             return self.highlightColor
         } set {

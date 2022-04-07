@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension Int {
-    func fen2YuanDecimalFormatterValue() -> String? {
+public extension Int {
+     func fen2YuanDecimalFormatterValue() -> String? {
         let decimal = self % 100
         let nonDecimal = self / 100
         let formatter = NumberFormatter()

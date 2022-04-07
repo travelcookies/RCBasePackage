@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-extension String {
+public extension String {
     func ga_widthForComment(fontSize: CGFloat, height: CGFloat = 15) -> CGFloat {
         let font = UIFont.systemFont(ofSize: fontSize)
         let rect = NSString(string: self).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: height), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
