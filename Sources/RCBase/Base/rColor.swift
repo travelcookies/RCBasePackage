@@ -10,17 +10,17 @@ import UIKit
 
 struct rColor {
     /// RGB的颜色设置
-    static func RGB(r: CGFloat, g: CGFloat, b: CGFloat) -> UIColor {
+    static func rgb(r: CGFloat, g: CGFloat, b: CGFloat) -> UIColor {
         return UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: 1.0)
     }
 
     /// RGBA的颜色设置
-    static func RGBA(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) -> UIColor {
+    static func rgba(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) -> UIColor {
         return UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: a)
     }
 
     /// 16位 颜色设置
-    static func HexA(hexValue: Int, a: CGFloat) -> (UIColor) {
+    static func hexa(hexValue: Int, a: CGFloat) -> (UIColor) {
         return UIColor(red: (CGFloat)((hexValue & 0xFF0000) >> 16) / 255.0,
                        green: (CGFloat)((hexValue & 0xFF00) >> 8) / 255.0,
                        blue: (CGFloat)(hexValue & 0xFF) / 255.0,
@@ -28,7 +28,7 @@ struct rColor {
     }
 
     /// 16位 颜色设置
-    static func Hex(hexValue: Int) -> (UIColor) {
-        return HexA(hexValue: hexValue, a: 1.0)
+    static func hex(hexValue: Int) -> (UIColor) {
+        return hexa(hexValue: hexValue, a: 1.0)
     }
 }
