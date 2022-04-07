@@ -27,6 +27,7 @@
 		7361CD3E27FED3F70062147D /* rDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD2E27FED3F70062147D /* rDevice.swift */; };
 		7361CD3F27FED3F70062147D /* rLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD2F27FED3F70062147D /* rLocation.swift */; };
 		7361CD4027FED3F70062147D /* rScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD3027FED3F70062147D /* rScreen.swift */; };
+		7361CD4C27FEDBC60062147D /* baseNNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD4B27FEDBC60062147D /* baseNNN.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		7361CD2E27FED3F70062147D /* rDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rDevice.swift; sourceTree = "<group>"; };
 		7361CD2F27FED3F70062147D /* rLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rLocation.swift; sourceTree = "<group>"; };
 		7361CD3027FED3F70062147D /* rScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rScreen.swift; sourceTree = "<group>"; };
+		7361CD4B27FEDBC60062147D /* baseNNN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseNNN.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				7361CD3027FED3F70062147D /* rScreen.swift */,
 				7361CD1F27FED3F70062147D /* Extension */,
 				7361CCE027FECD6F0062147D /* RSwiftBase.docc */,
+				7361CD4B27FEDBC60062147D /* baseNNN.swift */,
 			);
 			path = RSwiftBase;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				7361CCE127FECD6F0062147D /* RSwiftBase.docc in Sources */,
 				7361CD3B27FED3F70062147D /* rNotification.swift in Sources */,
 				7361CD3427FED3F70062147D /* UIView+IBIns.swift in Sources */,
+				7361CD4C27FEDBC60062147D /* baseNNN.swift in Sources */,
 				7361CD4027FED3F70062147D /* rScreen.swift in Sources */,
 				7361CD3827FED3F70062147D /* String+Extension.swift in Sources */,
 				7361CD3727FED3F70062147D /* NSInteger+Extension.swift in Sources */,
