@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-struct rFont {
-    static func font(font: CGFloat) -> UIFont {
+public struct rFont {
+    public static func font(font: CGFloat) -> UIFont {
         return UIFont.systemFont(ofSize: font)
     }
 
-    static func font(_ font: CGFloat, _ weight: UIFont.Weight) -> UIFont {
+    public static func font(_ font: CGFloat, _ weight: UIFont.Weight) -> UIFont {
         return UIFont.systemFont(ofSize: font, weight: weight)
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct rNotification {
+public struct rNotification {
 //    ///通知name - 登录
 //    static let login = "NOTIFICATION_LOG_IN"
 //    ///通知name - 登出

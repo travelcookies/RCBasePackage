@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-struct rDevice {
-    static let share = rDevice()
+public struct rDevice {
+    public static let share = rDevice()
 
     /// 手机型号
-    let name: String = {
+    public let name: String = {
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
@@ -81,17 +81,17 @@ struct rDevice {
     }()
 
     /// 获取设备名称 例如：梓辰的手机
-    let deviceName = UIDevice.current.name
+    public let deviceName = UIDevice.current.name
     /// 获取系统名称 例如：iPhone OS
-    let sysName = UIDevice.current.systemName
+    public let sysName = UIDevice.current.systemName
     /// 获取系统版本 例如：9.2
-    let sysVersion = UIDevice.current.systemVersion
+    public let sysVersion = UIDevice.current.systemVersion
     /// 获取设备唯一标识符 例如：FBF2306E-A0D8-4F4B-BDED-9333B627D3E6
-    let deviceUUID = UIDevice.current.identifierForVendor?.uuidString
+    public let deviceUUID = UIDevice.current.identifierForVendor?.uuidString
     /// 获取设备的型号 例如：iPhone
-    let deviceModel = UIDevice.current.model
+    public let deviceModel = UIDevice.current.model
 
-    var infoDic = Bundle.main.infoDictionary
+    public var infoDic = Bundle.main.infoDictionary
     /// 获取App的版本
 //    let appVersion = rDevice.share.infoDic?["CFBundleShortVersionString"] ?? ""
     ////    self.infoDic?["CFBundleShortVersionString"]

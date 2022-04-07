@@ -9,7 +9,7 @@ import Foundation
 
 struct rTime {
     // 返回最近的天数
-    static func returnNearByMonth(count: Int) -> [String] {
+    public static func returnNearByMonth(count: Int) -> [String] {
         let time = Date().timeIntervalSince1970
         var arr = [String]()
 
@@ -26,7 +26,7 @@ struct rTime {
     }
 
     // 返回最近的月数
-    static func returnNearByYear(count: Int) -> [String] {
+    public static func returnNearByYear(count: Int) -> [String] {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM"
         let str = dateFormatter.string(from: Date())
@@ -46,7 +46,7 @@ struct rTime {
     }
 
     // 返回年
-    static func returnYear() -> String {
+    public static func returnYear() -> String {
         let date = Date()
         let calendar = Calendar.current
         let unitFlags: NSCalendar.Unit = [NSCalendar.Unit.year, NSCalendar.Unit.month, NSCalendar.Unit.day, NSCalendar.Unit.hour, NSCalendar.Unit.minute]
@@ -56,7 +56,7 @@ struct rTime {
     }
 
     // 转换时间戳
-    static func dateTimeYYYYMMDD(time: Int64, formatString: String? = "yyyy.MM.dd") -> String {
+    public static func dateTimeYYYYMMDD(time: Int64, formatString: String? = "yyyy.MM.dd") -> String {
         let format = DateFormatter()
         format.dateFormat = formatString
         let date = Date(timeIntervalSince1970: TimeInterval(time))
@@ -64,7 +64,7 @@ struct rTime {
     }
 
     /// 时间转换成时间戳  默认格式:yyyy-MM-dd HH:mm:ss
-    static func dateTimeYYYYMMDD(string: String, formatString: String? = "yyyy-MM-dd HH:mm:ss") -> TimeInterval {
+    public static func dateTimeYYYYMMDD(string: String, formatString: String? = "yyyy-MM-dd HH:mm:ss") -> TimeInterval {
         let format = DateFormatter()
         format.dateFormat = formatString
         format.locale = Locale(identifier: "zh_CN")
@@ -73,7 +73,7 @@ struct rTime {
     }
 
     // 返回年月日
-    static func returnMonthDayHourMinute(timeStr: String) -> String {
+    public static func returnMonthDayHourMinute(timeStr: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         dateFormatter.locale = Locale(identifier: "zh_CN")
@@ -93,7 +93,7 @@ struct rTime {
 
     // MARK: 今年
 
-    static func currentYear() -> Int {
+    public static func currentYear() -> Int {
         let calendar = NSCalendar.current
         let com = calendar.dateComponents([.year, .month, .day], from: Date())
         return com.year!
@@ -101,7 +101,7 @@ struct rTime {
 
     // MARK: 今月
 
-    static func currentMonth() -> Int {
+    public static func currentMonth() -> Int {
         let calendar = NSCalendar.current
         let com = calendar.dateComponents([.year, .month, .day], from: Date())
         return com.month!
@@ -109,41 +109,41 @@ struct rTime {
 
     // MARK: 今日
 
-    static func currentDay() -> Int {
+    public static func currentDay() -> Int {
         let calendar = NSCalendar.current
         let com = calendar.dateComponents([.year, .month, .day], from: Date())
         return com.day!
     }
 
     // 获取当前日期(年-月)
-    static func currentDateMM() -> String {
+    public static func currentDateMM() -> String {
         let calendar = NSCalendar.current
         let com = calendar.dateComponents([.year, .month, .day], from: Date())
         return String(format: "%d-%02d", com.year!, com.month!)
     }
 
     // 获取当前日期(年-月-日)
-    static func currentDate() -> String {
+    public static func currentDate() -> String {
         let calendar = NSCalendar.current
         let com = calendar.dateComponents([.year, .month, .day], from: Date())
         return String(format: "%d-%02d-%02d", com.year!, com.month!, com.day!)
     }
 
     // 获取当前日期(年-月-日 时:分:秒)
-    static func currentDetailsDate() -> String {
+    public static func currentDetailsDate() -> String {
         let currStamp = getStamp()
         return timeStampToStringDetail(String(format: "%d", currStamp))
     }
 
     // MARK: 今天星期几
 
-    static func currentWeekDay() -> Int {
+    public static func currentWeekDay() -> Int {
         return rTime.weekDay(Date())
     }
 
     // MARK: 星期几
 
-    static func weekDay(_ date: Date) -> Int {
+    public static func weekDay(_ date: Date) -> Int {
         let interval = Int(date.timeIntervalSince1970)
         let days = Int(interval / 86400) // 24*60*60
         let weekday = ((days + 4) % 7 + 7) % 7
@@ -152,7 +152,7 @@ struct rTime {
 
     // MARK: 星期几
 
-    static func weekdayStringWithDate(_ date: Date) -> String {
+    public static func weekdayStringWithDate(_ date: Date) -> String {
         let componets = NSCalendar.current.component(.weekday, from: date)
 //        let weakday = componets.hashValue
         let m = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"]
@@ -162,7 +162,7 @@ struct rTime {
 
     // MARK: 本月天数
 
-    static func countOfDaysInCurrentMonth() -> Int {
+    public static func countOfDaysInCurrentMonth() -> Int {
         let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         let range = (calendar as NSCalendar?)?.range(of: NSCalendar.Unit.day, in: NSCalendar.Unit.month, for: Date())
         return (range?.length)!
@@ -170,7 +170,7 @@ struct rTime {
 
     // MARK: 当月第一天是星期几
 
-    static func firstWeekDayInCurrentMonth() -> Int {
+    public static func firstWeekDayInCurrentMonth() -> Int {
         // 星期和数字一一对应 星期日：7
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM"
@@ -187,7 +187,7 @@ struct rTime {
     // MARK: - 获取指定日期各种值
 
     // 根据年月得到某月天数
-    static func getCountOfDaysInMonth(year: Int, month: Int) -> Int {
+    public static func getCountOfDaysInMonth(year: Int, month: Int) -> Int {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM"
         let date
@@ -199,7 +199,7 @@ struct rTime {
 
     // MARK: 根据年月得到某月第一天是周几
 
-    static func getfirstWeekDayInMonth(year: Int, month: Int) -> Int {
+    public static func getfirstWeekDayInMonth(year: Int, month: Int) -> Int {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM"
         let date
@@ -212,7 +212,7 @@ struct rTime {
 
     // MARK: date转日期字符串
 
-    static func dateToDateString(_ date: Date, dateFormat: String) -> String {
+    public static func dateToDateString(_ date: Date, dateFormat: String) -> String {
         let timeZone = NSTimeZone.local
         let formatter = DateFormatter()
         formatter.timeZone = timeZone
@@ -224,7 +224,7 @@ struct rTime {
 
     // MARK: 日期字符串转date
 
-    static func dateStringToDate(_ dateStr: String) -> Date {
+    public static func dateStringToDate(_ dateStr: String) -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
         dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -235,7 +235,7 @@ struct rTime {
 
     // MARK: 时间字符串转date
 
-    static func timeStringToDate(_ dateStr: String) -> Date {
+    public static func timeStringToDate(_ dateStr: String) -> Date {
         let dateFormatter = DateFormatter()
         //        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
         dateFormatter.dateFormat = "yyyy-MM-dd  HH:mm:ss"
@@ -245,14 +245,14 @@ struct rTime {
 
     // MARK: 计算天数差
 
-    static func dateDifference(_ dateA: Date, from dateB: Date) -> Double {
+    public static func dateDifference(_ dateA: Date, from dateB: Date) -> Double {
         let interval = dateA.timeIntervalSince(dateB)
         return interval / 86400
     }
 
     // MARK: 比较时间先后
 
-    static func compareOneDay(oneDay: Date, withAnotherDay anotherDay: Date) -> Int {
+    public static func compareOneDay(oneDay: Date, withAnotherDay anotherDay: Date) -> Int {
         let dateFormatter: DateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let oneDayStr: String = dateFormatter.string(from: oneDay)
@@ -277,7 +277,7 @@ struct rTime {
     // MARK: 时间与时间戳之间的转化
 
     // 将时间转换为时间戳
-    static func stringToTimeStamp(_ stringTime: String) -> Int {
+    public static func stringToTimeStamp(_ stringTime: String) -> Int {
         let dfmatter = DateFormatter()
         dfmatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
 
@@ -293,7 +293,7 @@ struct rTime {
     }
 
     // 将时间戳转换为年月日
-    static func timeStampToString(_ timeStamp: String) -> String {
+    public static func timeStampToString(_ timeStamp: String) -> String {
         let string = NSString(string: timeStamp)
         let timeSta: TimeInterval = string.doubleValue
         let dfmatter = DateFormatter()
@@ -303,7 +303,7 @@ struct rTime {
     }
 
     // 将时间戳转换为具体时间
-    static func timeStampToStringDetail(_ timeStamp: String) -> String {
+    public static func timeStampToStringDetail(_ timeStamp: String) -> String {
         let string = NSString(string: timeStamp)
         let timeSta: TimeInterval = string.doubleValue
         let dfmatter = DateFormatter()
@@ -313,7 +313,7 @@ struct rTime {
     }
 
     // 将时间戳转换为具体时间时分
-    static func timeStampToStringDetailHHMM(_ timeStamp: String) -> String {
+    public static func timeStampToStringDetailHHMM(_ timeStamp: String) -> String {
         let string = NSString(string: timeStamp)
         let timeSta: TimeInterval = string.doubleValue
         let dfmatter = DateFormatter()
@@ -323,7 +323,7 @@ struct rTime {
     }
 
     // 将时间戳转换为时分秒
-    static func timeStampToHHMMSS(_ timeStamp: String) -> String {
+    public static func timeStampToHHMMSS(_ timeStamp: String) -> String {
         let string = NSString(string: timeStamp)
         let timeSta: TimeInterval = string.doubleValue
         let dfmatter = DateFormatter()
@@ -333,7 +333,7 @@ struct rTime {
     }
 
     // 将时间戳转换为时分
-    static func timeStampToHHMM(_ timeStamp: String) -> String {
+    public static func timeStampToHHMM(_ timeStamp: String) -> String {
         let string = NSString(string: timeStamp)
         let timeSta: TimeInterval = string.doubleValue
         let dfmatter = DateFormatter()
@@ -343,7 +343,7 @@ struct rTime {
     }
 
     // 获取系统的当前时间戳
-    static func getStamp() -> Int {
+    public static func getStamp() -> Int {
         // 获取当前时间戳
         let date = Date()
         let timeInterval: Int = Int(date.timeIntervalSince1970)
@@ -351,7 +351,7 @@ struct rTime {
     }
 
     // 月份数字转汉字
-    static func numberToChina(monthNum: Int) -> String {
+    public static func numberToChina(monthNum: Int) -> String {
         let ChinaArray = ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"]
         let ChinaStr: String = ChinaArray[monthNum - 1]
         return ChinaStr
@@ -359,7 +359,7 @@ struct rTime {
 
     // MARK: 数字前补0
 
-    static func add0BeforeNumber(_ number: Int) -> String {
+    public static func add0BeforeNumber(_ number: Int) -> String {
         if number >= 10 {
             return String(number)
         } else {
@@ -369,7 +369,7 @@ struct rTime {
 
     // MARK: 将时间显示为（几分钟前，几小时前，几天前）
 
-    static func compareCurrentTime(str: String) -> String {
+    public static func compareCurrentTime(str: String) -> String {
         let timeDate = timeStringToDate(str)
         let currentDate = NSDate()
         let timeInterval = currentDate.timeIntervalSince(timeDate)
@@ -398,7 +398,7 @@ struct rTime {
 
     // MARK: 计时
 
-    static func comparePastTime(startTime: String) -> String {
+    public static func comparePastTime(startTime: String) -> String {
         // 1605161267000
         let timestamp = Date().timeIntervalSince1970
         let timeStamp2 = CLongLong(round(timestamp * 1000))
@@ -423,7 +423,7 @@ struct rTime {
     }
 
     /** 计算两个时间直接的间隔 */
-    static func durationBetween(beginTime: String, endTime: String) -> String {
+    public static func durationBetween(beginTime: String, endTime: String) -> String {
         let dfmatter = DateFormatter()
         dfmatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         guard let bt = dfmatter.date(from: beginTime), let et = dfmatter.date(from: endTime) else {

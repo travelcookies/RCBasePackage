@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-struct rScreen {
-    static let bounds = UIScreen.main.bounds
-    static let width = bounds.size.width
-    static let height = bounds.size.height
+public struct rScreen {
+    public static let bounds = UIScreen.main.bounds
+    public static let width = bounds.size.width
+    public static let height = bounds.size.height
 
     // 是否为刘海屏
-    static var isFullScreen: Bool {
+    public static var isFullScreen: Bool {
         if #available(iOS 11, *) {
             guard let w = UIApplication.shared.delegate?.window, let unwrapedWindow = w else {
                 return false
@@ -28,7 +28,7 @@ struct rScreen {
         return false
     }
 
-    static var statusH: CGFloat {
+    public static var statusH: CGFloat {
         if iPhoneX {
             return 44
         }
@@ -41,13 +41,13 @@ struct rScreen {
 
 /// 根据高度 判断 机型
 extension rScreen {
-    static let iPhone4 = rScreen.height < 568 ? true : false
-    static let iPhone5 = rScreen.height == 568 ? true : false
-    static let iPhone6 = rScreen.height == 667 ? true : false
-    static let iPhone6P = rScreen.height == 736 ? true : false
-    static let iPhoneX = rScreen.height == 812 ? true : false
+    public static let iPhone4 = rScreen.height < 568 ? true : false
+    public static let iPhone5 = rScreen.height == 568 ? true : false
+    public static let iPhone6 = rScreen.height == 667 ? true : false
+    public static let iPhone6P = rScreen.height == 736 ? true : false
+    public static let iPhoneX = rScreen.height == 812 ? true : false
 
-    static func isIPhoneX() -> Bool {
+    public static func isIPhoneX() -> Bool {
         if #available(iOS 11.0, *) {
             if let delegate = UIApplication.shared.delegate {
                 if let window = delegate.window {
@@ -66,15 +66,15 @@ extension rScreen {
 
 extension rScreen {
     /// statusHeight 状态栏高度
-    static let statusHeight: CGFloat = isFullScreen ? statusH : 20
+    public static let statusHeight: CGFloat = isFullScreen ? statusH : 20
     // kNavBarHeight    导航栏高度
-    static let naviBarHeight: CGFloat = 44
+    public static let naviBarHeight: CGFloat = 44
     // navigationBarHeight 状态栏 加 导航栏
-    static let navigationBarHeight: CGFloat = statusHeight + naviBarHeight
+    public static let navigationBarHeight: CGFloat = statusHeight + naviBarHeight
     // tabBarHeight 底部导航栏高度
-    static let tabBarHeight: CGFloat = isFullScreen ? 49 + 34 : 49
+    public static let tabBarHeight: CGFloat = isFullScreen ? 49 + 34 : 49
     // safeAreaBottom   安全范围底部高度
-    static let safeAreaBottom: CGFloat = isFullScreen ? 34 : 0
+    public static let safeAreaBottom: CGFloat = isFullScreen ? 34 : 0
     // safeAreaTop  安全范围头部高度
-    static let safeAreaTop: CGFloat = isFullScreen ? 48 : 0
+    public static let safeAreaTop: CGFloat = isFullScreen ? 48 : 0
 }

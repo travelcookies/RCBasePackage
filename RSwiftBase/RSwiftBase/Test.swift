@@ -8,7 +8,7 @@
 import Foundation
 
 public class test: NSObject {
-    func test() {
+    public func test() {
         debugPrint("测试")
     }
 }

@@ -8,11 +8,11 @@
 import CoreLocation
 import Foundation
 import UIKit
-struct rLocation {
+public struct rLocation {
     /**
      跳转定位设置
      */
-    static func jumpLocationSetting() {
+    public static func jumpLocationSetting() {
         let alert = UIAlertController(title: "定位服务已关闭", message: "我们需要通过您的地理位置信息获取您周边的信息,您需要打开定位服务,才可以为您服务", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "暂不开启", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "去设置", style: .destructive, handler: { _ in
@@ -29,7 +29,7 @@ struct rLocation {
     /**
      是否开启定位
      */
-    static func isEnableLocationPermissions() -> Bool {
+    public static func isEnableLocationPermissions() -> Bool {
         if ((CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedAlways) || (CLLocationManager.authorizationStatus() == CLAuthorizationStatus.notDetermined)) && CLLocationManager.locationServicesEnabled() {
             return true
         } else if CLLocationManager.authorizationStatus() == CLAuthorizationStatus.denied {
