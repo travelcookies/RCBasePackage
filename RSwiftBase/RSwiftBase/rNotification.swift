@@ -14,6 +14,4 @@ public struct rNotification {
 //    static let logout = "NOTIFICATION_LOGIN_OUT"
 //    /** 显示登录页面通知 */
 //    static let showLoginPage = "NOTIFICATION_LOGIN_page_show"
-    
-
 }

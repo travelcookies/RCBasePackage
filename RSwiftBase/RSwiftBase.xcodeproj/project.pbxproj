@@ -111,7 +111,6 @@
 				7361CD2E27FED3F70062147D /* rDevice.swift */,
 				7361CD2F27FED3F70062147D /* rLocation.swift */,
 				7361CD3027FED3F70062147D /* rScreen.swift */,
-				7361CD2927FED3F70062147D /* Base */,
 				7361CD1F27FED3F70062147D /* Extension */,
 				7361CCE027FECD6F0062147D /* RSwiftBase.docc */,
 			);
@@ -140,13 +139,6 @@
 				7361CD2827FED3F70062147D /* UIView+SetRect.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		7361CD2927FED3F70062147D /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
