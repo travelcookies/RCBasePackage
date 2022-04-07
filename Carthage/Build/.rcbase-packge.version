@@ -8,18 +8,18 @@
   "tvOS" : [
 
   ],
-  "commitish" : "1.0.2",
+  "commitish" : "1.0.3",
   "iOS" : [
     {
       "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
-      "hash" : "9c47cd23ae851254037eefff00088f5ea9adfbd3c3806a83bb9e05f36d93868b",
+      "hash" : "fff2b1a2c7b126462abb5a14bf0529fed6120900deed2ce82778e6c7e7d00a2a",
       "name" : "RSwiftBase",
       "container" : "RSwiftBase.xcframework",
       "identifier" : "ios-arm64"
     },
     {
       "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
-      "hash" : "62b609a704601e6696e8ff0c534b221dfc4fb2b102023807800210b475fa8d69",
+      "hash" : "4af40da28791fcb218cb7f34115b0e0f619b69e064ccb4b90e1fd8a06b53170c",
       "name" : "RSwiftBase",
       "container" : "RSwiftBase.xcframework",
       "identifier" : "ios-arm64_x86_64-simulator"
