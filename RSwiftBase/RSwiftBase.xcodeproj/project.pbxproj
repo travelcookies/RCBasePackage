@@ -11,7 +11,6 @@
 		7361CCE727FECD6F0062147D /* RSwiftBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7361CCDC27FECD6F0062147D /* RSwiftBase.framework */; };
 		7361CCEC27FECD6F0062147D /* RSwiftBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CCEB27FECD6F0062147D /* RSwiftBaseTests.swift */; };
 		7361CCED27FECD6F0062147D /* RSwiftBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7361CCDF27FECD6F0062147D /* RSwiftBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7361CCF727FECDBC0062147D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CCF627FECDBC0062147D /* Test.swift */; };
 		7361CD3127FED3F70062147D /* UIButton+IBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD2027FED3F70062147D /* UIButton+IBExtension.swift */; };
 		7361CD3227FED3F70062147D /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD2127FED3F70062147D /* Int+Extension.swift */; };
 		7361CD3327FED3F70062147D /* String+TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD2227FED3F70062147D /* String+TextSize.swift */; };
@@ -46,7 +45,6 @@
 		7361CCE027FECD6F0062147D /* RSwiftBase.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RSwiftBase.docc; sourceTree = "<group>"; };
 		7361CCE627FECD6F0062147D /* RSwiftBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSwiftBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7361CCEB27FECD6F0062147D /* RSwiftBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSwiftBaseTests.swift; sourceTree = "<group>"; };
-		7361CCF627FECDBC0062147D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		7361CD2027FED3F70062147D /* UIButton+IBExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+IBExtension.swift"; sourceTree = "<group>"; };
 		7361CD2127FED3F70062147D /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		7361CD2227FED3F70062147D /* String+TextSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TextSize.swift"; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				7361CCDF27FECD6F0062147D /* RSwiftBase.h */,
 				7361CD2927FED3F70062147D /* Base */,
 				7361CD1F27FED3F70062147D /* Extension */,
-				7361CCF627FECDBC0062147D /* Test.swift */,
 				7361CCE027FECD6F0062147D /* RSwiftBase.docc */,
 			);
 			path = RSwiftBase;
@@ -276,7 +273,6 @@
 				7361CD3D27FED3F70062147D /* rTime.swift in Sources */,
 				7361CD3627FED3F70062147D /* UIView+Extension.swift in Sources */,
 				7361CD3C27FED3F70062147D /* rColor.swift in Sources */,
-				7361CCF727FECDBC0062147D /* Test.swift in Sources */,
 				7361CD3127FED3F70062147D /* UIButton+IBExtension.swift in Sources */,
 				7361CD3A27FED3F70062147D /* rFont.swift in Sources */,
 			);
