@@ -9,11 +9,17 @@ import Foundation
 import UIKit
 
 public struct rScreen {
+
     public static let bounds = UIScreen.main.bounds
+
+    /// 页面宽度
     public static let width = bounds.size.width
+
+    /// 页面高度
     public static let height = bounds.size.height
 
-    // 是否为刘海屏
+
+    /// 是否为刘海屏
     public static var isFullScreen: Bool {
         if #available(iOS 11, *) {
             guard let w = UIApplication.shared.delegate?.window, let unwrapedWindow = w else {
@@ -28,6 +34,7 @@ public struct rScreen {
         return false
     }
 
+    /// 状态栏高度
     public static var statusH: CGFloat {
         if iPhoneX {
             return 44
@@ -67,14 +74,14 @@ extension rScreen {
 extension rScreen {
     /// statusHeight 状态栏高度
     public static let statusHeight: CGFloat = isFullScreen ? statusH : 20
-    // kNavBarHeight    导航栏高度
+    /// kNavBarHeight    导航栏高度
     public static let naviBarHeight: CGFloat = 44
-    // navigationBarHeight 状态栏 加 导航栏
+    /// navigationBarHeight 状态栏 加 导航栏
     public static let navigationBarHeight: CGFloat = statusHeight + naviBarHeight
-    // tabBarHeight 底部导航栏高度
+    /// tabBarHeight 底部导航栏高度
     public static let tabBarHeight: CGFloat = isFullScreen ? 49 + 34 : 49
-    // safeAreaBottom   安全范围底部高度
+    /// safeAreaBottom   安全范围底部高度
     public static let safeAreaBottom: CGFloat = isFullScreen ? 34 : 0
-    // safeAreaTop  安全范围头部高度
+    /// safeAreaTop  安全范围头部高度
     public static let safeAreaTop: CGFloat = isFullScreen ? 48 : 0
 }

@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 public extension UIButton {
-    //  高亮
-     @IBInspectable var highlightColor: UIColor {
+    /// 高亮
+    @IBInspectable var highlightColor: UIColor {
         get {
             return self.highlightColor
         } set {
@@ -19,6 +19,9 @@ public extension UIButton {
         }
     }
 
+    /// 通过Color 生成Image
+    /// - Parameter color: 需要设置的颜色
+    /// - Returns: UIImage
     func imageWithColor(color: UIColor) -> UIImage {
         let rect: CGRect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)

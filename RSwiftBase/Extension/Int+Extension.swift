@@ -9,7 +9,9 @@
 import UIKit
 
 public extension Int {
-     func fen2YuanDecimalFormatterValue() -> String? {
+    /// 金额 - Int 转 String
+    /// - Returns:  String?
+    func fen2YuanDecimalFormatterValue() -> String? {
         let decimal = self % 100
         let nonDecimal = self / 100
         let formatter = NumberFormatter()

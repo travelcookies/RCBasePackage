@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIView {
-    // x
+    /// 坐标 x
     var x: CGFloat {
         get {
             return frame.origin.x
@@ -22,7 +22,7 @@ public extension UIView {
         }
     }
 
-    // y
+    /// 坐标 y
     var y: CGFloat {
         get {
             return frame.origin.y
@@ -35,7 +35,7 @@ public extension UIView {
         }
     }
 
-    // height
+    /// 高度 height
     var height: CGFloat {
         get {
             return frame.size.height
@@ -48,7 +48,7 @@ public extension UIView {
         }
     }
 
-    // width
+    /// 宽度 width
     var width: CGFloat {
         get {
             return frame.size.width
@@ -61,7 +61,7 @@ public extension UIView {
         }
     }
 
-    // left
+    /// left
     var left: CGFloat {
         get {
             return x
@@ -72,7 +72,7 @@ public extension UIView {
         }
     }
 
-    // right
+    /// right
     var right: CGFloat {
         get {
             return x + width
@@ -83,7 +83,7 @@ public extension UIView {
         }
     }
 
-    // top
+    /// top
     var top: CGFloat {
         get {
             return y
@@ -94,7 +94,7 @@ public extension UIView {
         }
     }
 
-    // bottom
+    /// bottom
     var bottom: CGFloat {
         get {
             return y + height
@@ -105,6 +105,7 @@ public extension UIView {
         }
     }
 
+    /// 中心点坐标 X轴
     var centerX: CGFloat {
         get {
             return center.x
@@ -115,6 +116,7 @@ public extension UIView {
         }
     }
 
+    /// 中心点坐标 Y轴
     var centerY: CGFloat {
         get {
             return center.y
@@ -125,14 +127,17 @@ public extension UIView {
         }
     }
 
+    /// 宽度中点 X
     var middleX: CGFloat {
         return width / 2
     }
 
+    /// 高度中点 Y
     var middleY: CGFloat {
         return height / 2
     }
 
+    /// 中点
     var middlePoint: CGPoint {
         return CGPoint(x: middleX, y: middleY)
     }

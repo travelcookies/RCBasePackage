@@ -9,13 +9,10 @@
 import Foundation
 import UIKit
 public extension UIView {
-    /**
-     添加圆角 某个方向
-     topLeft
-     topRight
-     bottomLeft
-     bottomRight
-     allCorners */
+    ///  添加圆角 某个方向
+    /// - Parameters:
+    ///   - conrners: UIRectCorner: topLeft,topRight,bottomLeft,bottomRight,allCorners;
+    ///   - radius: radius 数值
     func addCorner(conrners: UIRectCorner, radius: CGFloat) {
         let maskPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: conrners, cornerRadii: CGSize(width: radius, height: radius))
         let maskLayer = CAShapeLayer()

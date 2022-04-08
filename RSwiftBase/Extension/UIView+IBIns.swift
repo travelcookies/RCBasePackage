@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIView {
-    //  圆角
+    /// 圆角
     @IBInspectable var rcornerRadius: CGFloat {
         get {
             return layer.cornerRadius
@@ -20,7 +20,7 @@ public extension UIView {
         }
     }
 
-    //  边线宽度
+    /// 边线宽度
     @IBInspectable var rborderWidth: CGFloat {
         get {
             return layer.borderWidth
@@ -29,7 +29,7 @@ public extension UIView {
         }
     }
 
-    //  边线颜色
+    /// 边线颜色
     @IBInspectable var rborderColor: UIColor {
         get {
             return layer.rborderUIColor
@@ -39,8 +39,8 @@ public extension UIView {
     }
 }
 
-//  设置边线颜色
 extension CALayer {
+    /// 设置边线颜色
     var rborderUIColor: UIColor {
         get {
             return UIColor(cgColor: borderColor!)

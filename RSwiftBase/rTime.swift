@@ -8,7 +8,10 @@
 import Foundation
 
 struct rTime {
-    // 返回最近的天数
+
+    /// 返回最近的天数
+    /// - Parameter count:倒数天数
+    /// - Returns: 字符串数组 ["MM-dd"]
     public static func returnNearByMonth(count: Int) -> [String] {
         let time = Date().timeIntervalSince1970
         var arr = [String]()

@@ -90,7 +90,7 @@ public struct rDevice {
     public let deviceUUID = UIDevice.current.identifierForVendor?.uuidString
     /// 获取设备的型号 例如：iPhone
     public let deviceModel = UIDevice.current.model
-
+    /// 当前机子信息
     public var infoDic = Bundle.main.infoDictionary
     /// 获取App的版本
 //    let appVersion = rDevice.share.infoDic?["CFBundleShortVersionString"] ?? ""
