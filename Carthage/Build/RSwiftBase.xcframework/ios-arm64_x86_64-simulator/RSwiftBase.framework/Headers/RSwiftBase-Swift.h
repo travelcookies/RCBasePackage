@@ -212,6 +212,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class UIColor;
 
 @interface UIButton (SWIFT_EXTENSION(RSwiftBase))
+/// 高亮
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull highlightColor;
 @end
 
@@ -219,8 +220,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSNumber;
 
 @interface UIView (SWIFT_EXTENSION(RSwiftBase))
+/// 圆角
 @property (nonatomic) IBInspectable CGFloat rcornerRadius;
+/// 边线宽度
 @property (nonatomic) IBInspectable CGFloat rborderWidth;
+/// 边线颜色
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull rborderColor;
 @end
 
@@ -444,6 +448,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class UIColor;
 
 @interface UIButton (SWIFT_EXTENSION(RSwiftBase))
+/// 高亮
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull highlightColor;
 @end
 
@@ -451,8 +456,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSNumber;
 
 @interface UIView (SWIFT_EXTENSION(RSwiftBase))
+/// 圆角
 @property (nonatomic) IBInspectable CGFloat rcornerRadius;
+/// 边线宽度
 @property (nonatomic) IBInspectable CGFloat rborderWidth;
+/// 边线颜色
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull rborderColor;
 @end
 
