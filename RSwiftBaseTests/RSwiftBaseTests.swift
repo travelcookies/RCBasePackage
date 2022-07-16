@@ -23,6 +23,10 @@ class RSwiftBaseTests: XCTestCase {
         view.frame = CGRect(x: 10, y: 20, width: 100, height: 200)
 
         XCTAssert(view.centerY == 120)
+        
+        
+        let sss = Async()
+        sss.test()
     }
 
     func testPerformanceExample() throws {
