@@ -10,7 +10,7 @@ import UIKit
 
 extension Int: XPCompatible {}
 
-extension XP where Base == Int {
+public extension XP where Base == Int {
     /// 金额 - Int 转 String
     /// - Returns:  String?
     @discardableResult func fen2YuanDecimalFormatterValue() -> String? {
@@ -41,7 +41,7 @@ extension XP where Base == Int {
 }
 
 /// Color
-extension XP where Base == Int {
+public extension XP where Base == Int {
     /// 16位 颜色设置
     /// - Returns: UIColor
     var hex: UIColor {

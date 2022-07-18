@@ -13,7 +13,7 @@ import UIKit
 
 extension Date: XPCompatible {}
 
-extension XP where Base == Date {
+public extension XP where Base == Date {
     /// 获取年份
     var year: Int {
         let calendar = NSCalendar.current

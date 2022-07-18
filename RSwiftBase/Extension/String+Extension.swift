@@ -60,7 +60,7 @@ public extension XP where Base == String {
 }
 
 /// Test Size
-extension XP where Base == String {
+public extension XP where Base == String {
     /// 计算宽度
     /// - Parameters:
     ///   - fontSize: CGFloat
@@ -95,5 +95,3 @@ extension XP where Base == String {
         return ceil(rect.height) > maxHeight ? maxHeight : ceil(rect.height)
     }
 }
-
-

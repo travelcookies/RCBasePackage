@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension XP where Base == UIButton {
+public extension XP where Base == UIButton {
     enum ButtonContentLayoutStyle: Int {
         case normal = 0 // 内容居中-图左文右
         case centerImageRight // 内容居中-图右文左
