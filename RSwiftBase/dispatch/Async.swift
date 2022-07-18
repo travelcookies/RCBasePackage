@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Async {
+public struct Async {
     public typealias Task = () -> Void
 
     /// 异步
