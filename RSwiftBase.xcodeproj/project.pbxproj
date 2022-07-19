@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7300F715286DAC7D006DCE84 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7300F714286DAC7D006DCE84 /* Async.swift */; };
+		73138A1B2885AB0C00F7C517 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73138A1A2885AB0C00F7C517 /* Log.swift */; };
 		7334BC84282A64A000ED2EDE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7334BC83282A64A000ED2EDE /* UIView+Extension.swift */; };
 		7334BC88282A66F100ED2EDE /* normal in Resources */ = {isa = PBXBuildFile; fileRef = 7334BC87282A66F100ED2EDE /* normal */; };
 		7361CCE127FECD6F0062147D /* RSwiftBase.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7361CCE027FECD6F0062147D /* RSwiftBase.docc */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		7300F714286DAC7D006DCE84 /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		73138A1A2885AB0C00F7C517 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		7334BC83282A64A000ED2EDE /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		7334BC87282A66F100ED2EDE /* normal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = normal; sourceTree = SOURCE_ROOT; };
 		7361CCDC27FECD6F0062147D /* RSwiftBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSwiftBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				7361CD2E27FED3F70062147D /* rDevice.swift */,
 				7361CD2F27FED3F70062147D /* rLocation.swift */,
 				7361CD3027FED3F70062147D /* rScreen.swift */,
+				73138A1A2885AB0C00F7C517 /* Log.swift */,
 				7361CD1F27FED3F70062147D /* Extension */,
 				7300F713286DAC41006DCE84 /* dispatch */,
 				7361CCE027FECD6F0062147D /* RSwiftBase.docc */,
@@ -263,6 +266,7 @@
 				7300F715286DAC7D006DCE84 /* Async.swift in Sources */,
 				7361CD4027FED3F70062147D /* rScreen.swift in Sources */,
 				73B735FA28829E5B00990F65 /* Button+Extension.swift in Sources */,
+				73138A1B2885AB0C00F7C517 /* Log.swift in Sources */,
 				7361CD3827FED3F70062147D /* String+Extension.swift in Sources */,
 				7361CD3527FED3F70062147D /* Date+Extension.swift in Sources */,
 				7361CD3E27FED3F70062147D /* rDevice.swift in Sources */,
@@ -438,7 +442,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.4;
+				MARKETING_VERSION = 1.1.5;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roc.RSwiftBase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -472,7 +477,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.4;
+				MARKETING_VERSION = 1.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roc.RSwiftBase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

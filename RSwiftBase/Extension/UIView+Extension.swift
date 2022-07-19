@@ -16,7 +16,9 @@ public extension XP where Base == UIView {
 
         return Bundle.main.loadNibNamed(loadName, owner: nil, options: nil)?.first as! Self
     }
+}
 
+public extension XP where Base: UIView {
     ///  添加圆角 某个方向
     /// - Parameters:
     ///   - conrners: UIRectCorner: topLeft,topRight,bottomLeft,bottomRight,allCorners;
@@ -41,9 +43,7 @@ public extension XP where Base == UIView {
         maskLayer.path = maskPath.cgPath
         base.layer.mask = maskLayer
     }
-}
 
-public extension XP where Base == UIView {
     /// 坐标 x
     var x: CGFloat {
         get {
