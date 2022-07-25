@@ -43,6 +43,13 @@ public extension XP where Base: UIView {
         maskLayer.path = maskPath.cgPath
         base.layer.mask = maskLayer
     }
+    
+    /// 移除子类view
+    func removeSubView() {
+        for view1 in base.subviews {
+            view1.removeFromSuperview()
+        }
+    }
 
     /// 坐标 x
     var x: CGFloat {
