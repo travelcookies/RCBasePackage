@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct rTime {
+public struct rTime {
     /// 返回最近的天数
     /// - Parameter count:倒数天数
     /// - Returns: 字符串数组 ["MM-dd"]
@@ -26,6 +26,44 @@ struct rTime {
 
         return arr.reversed()
     }
+    
+    /// 返回未来五天
+    /// - Parameter count:倒数天数
+    /// - Returns: 字符串数组 ["MM-dd"]
+    public static func returnFutureByMonth(count: Int) -> [String] {
+        let time = Date().timeIntervalSince1970
+        var arr = [String]()
+
+        for i in 0 ..< count {
+            let timeNow = time + TimeInterval(i * 3600 * 24)
+            let date = Date(timeIntervalSince1970: timeNow)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MM-dd"
+            let str = dateFormatter.string(from: date)
+            arr.append(str)
+        }
+
+        return arr
+    }
+    
+    /// 返回未来五天
+    /// - Parameter count:倒数天数
+    /// - Returns: 字符串数组 ["MM-dd"]
+    public static func returnFutureByMonthWeekday(count: Int) -> [String] {
+        let time = Date().timeIntervalSince1970
+        var arr = ["今天","明天"]
+        for i in 2 ..< count {
+            let timeNow = time + TimeInterval(i * 3600 * 24)
+            let date = Date(timeIntervalSince1970: timeNow)
+            let componets = NSCalendar.current.component(.weekday, from: date)
+            let m = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"]
+            arr.append(m[componets - 1])
+        }
+        return arr
+    }
+
+    
+
 
     // 返回最近的月数
     public static func returnNearByYear(count: Int) -> [String] {
@@ -156,9 +194,7 @@ struct rTime {
 
     public static func weekdayStringWithDate(_ date: Date) -> String {
         let componets = NSCalendar.current.component(.weekday, from: date)
-//        let weakday = componets.hashValue
         let m = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"]
-
         return m[componets - 1]
     }
 
@@ -176,7 +212,7 @@ struct rTime {
         // 星期和数字一一对应 星期日：7
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM"
-        let date = dateFormatter.date(from: String(Date().year()) + "-" + String(Date().month()))
+        let date = dateFormatter.date(from: String(Date().xp.year) + "-" + String(Date().xp.month))
         let calender = Calendar(identifier: Calendar.Identifier.gregorian)
         let comps = (calender as NSCalendar?)?.components(NSCalendar.Unit.weekday, from: date!)
         var week = comps?.weekday

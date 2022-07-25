@@ -18,19 +18,9 @@ class RSwiftBaseTests: XCTestCase {
     }
 
     func testExample() throws {
-        let view = UIView()
-//        view.frame = CGRect(x: 10, y: 20, width: 100, height: 200)
-
-        /// 获取打印所在的文件
-        let file = (#file as NSString).lastPathComponent
-        /// 获取所在的方法
-        let funcName = #function
-
-        /// 获取所在行
-
-//        print("啊啊啊啊啊啊啊啊\(file):\(funcName)")
-//        getClass("swswsswss", UIViewController.self)
+        print(rTime.returnFutureByMonthWeekday(count: 5))
     }
+
 //
 //    func getClass<T>(_ childVCName: String, _ type: T.Type) -> T? {
 //        // 1. 获取命名空间
