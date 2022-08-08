@@ -32,7 +32,6 @@
 		73B735FA28829E5B00990F65 /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B735F928829E5B00990F65 /* Button+Extension.swift */; };
 		73F44ED728A0A5960059050C /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F44ED628A0A5960059050C /* BaseNavigationController.swift */; };
 		73F44ED928A0A5E20059050C /* AlertVCExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F44ED828A0A5E20059050C /* AlertVCExtention.swift */; };
-		73F44EE028A0AA0C0059050C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73F44EE228A0AA0C0059050C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +71,6 @@
 		73B735F928829E5B00990F65 /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
 		73F44ED628A0A5960059050C /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		73F44ED828A0A5E20059050C /* AlertVCExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertVCExtention.swift; sourceTree = "<group>"; };
-		73F44EE128A0AA0C0059050C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		73F44EE328A0AA110059050C /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +144,6 @@
 				7361CD2F27FED3F70062147D /* rLocation.swift */,
 				7361CD3027FED3F70062147D /* rScreen.swift */,
 				73138A1A2885AB0C00F7C517 /* Log.swift */,
-				73F44EE228A0AA0C0059050C /* Localizable.strings */,
 				7361CCE027FECD6F0062147D /* RSwiftBase.docc */,
 			);
 			path = RSwiftBase;
@@ -279,7 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7334BC88282A66F100ED2EDE /* normal in Resources */,
-				73F44EE028A0AA0C0059050C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,18 +333,6 @@
 			targetProxy = 7361CCE827FECD6F0062147D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		73F44EE228A0AA0C0059050C /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				73F44EE128A0AA0C0059050C /* en */,
-				73F44EE328A0AA110059050C /* zh-HK */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7361CCEE27FECD6F0062147D /* Debug */ = {
