@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  RSwiftBase
+
+  Created by 林小鹏 on 2022/8/8.
+  
+*/
+cancel = "取消"
+ok = "确定"
