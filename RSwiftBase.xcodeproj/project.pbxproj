@@ -28,6 +28,8 @@
 		7361CD3E27FED3F70062147D /* rDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD2E27FED3F70062147D /* rDevice.swift */; };
 		7361CD3F27FED3F70062147D /* rLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD2F27FED3F70062147D /* rLocation.swift */; };
 		7361CD4027FED3F70062147D /* rScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD3027FED3F70062147D /* rScreen.swift */; };
+		739ACC2E29125B30009E2C97 /* GradientCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739ACC2D29125B30009E2C97 /* GradientCustomView.swift */; };
+		739ACC3029125B5F009E2C97 /* RVCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739ACC2F29125B5E009E2C97 /* RVCManager.swift */; };
 		73B735F42882912300990F65 /* XPCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B735F32882912300990F65 /* XPCompatible.swift */; };
 		73B735FA28829E5B00990F65 /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B735F928829E5B00990F65 /* Button+Extension.swift */; };
 		73F44ED728A0A5960059050C /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F44ED628A0A5960059050C /* BaseNavigationController.swift */; };
@@ -67,6 +69,8 @@
 		7361CD2E27FED3F70062147D /* rDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rDevice.swift; sourceTree = "<group>"; };
 		7361CD2F27FED3F70062147D /* rLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rLocation.swift; sourceTree = "<group>"; };
 		7361CD3027FED3F70062147D /* rScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rScreen.swift; sourceTree = "<group>"; };
+		739ACC2D29125B30009E2C97 /* GradientCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientCustomView.swift; sourceTree = "<group>"; };
+		739ACC2F29125B5E009E2C97 /* RVCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVCManager.swift; sourceTree = "<group>"; };
 		73B735F32882912300990F65 /* XPCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCompatible.swift; sourceTree = "<group>"; };
 		73B735F928829E5B00990F65 /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
 		73F44ED628A0A5960059050C /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
@@ -134,16 +138,9 @@
 				7361CCDF27FECD6F0062147D /* RSwiftBase.h */,
 				7361CD1F27FED3F70062147D /* Extension */,
 				7300F713286DAC41006DCE84 /* dispatch */,
-				73F44ED528A0A5740059050C /* BaseRoot */,
+				73F44ED528A0A5740059050C /* BaseMethod */,
 				7334BC87282A66F100ED2EDE /* normal */,
-				7361CD2A27FED3F70062147D /* rFont.swift */,
-				7361CD2B27FED3F70062147D /* rNotification.swift */,
-				7361CD2C27FED3F70062147D /* rColor.swift */,
-				7361CD2D27FED3F70062147D /* rTime.swift */,
-				7361CD2E27FED3F70062147D /* rDevice.swift */,
-				7361CD2F27FED3F70062147D /* rLocation.swift */,
-				7361CD3027FED3F70062147D /* rScreen.swift */,
-				73138A1A2885AB0C00F7C517 /* Log.swift */,
+				739ACC3129125B81009E2C97 /* RBaseScreen */,
 				7361CCE027FECD6F0062147D /* RSwiftBase.docc */,
 			);
 			path = RSwiftBase;
@@ -172,12 +169,29 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		73F44ED528A0A5740059050C /* BaseRoot */ = {
+		739ACC3129125B81009E2C97 /* RBaseScreen */ = {
 			isa = PBXGroup;
 			children = (
-				73F44ED628A0A5960059050C /* BaseNavigationController.swift */,
+				73138A1A2885AB0C00F7C517 /* Log.swift */,
+				7361CD2A27FED3F70062147D /* rFont.swift */,
+				7361CD2B27FED3F70062147D /* rNotification.swift */,
+				7361CD2C27FED3F70062147D /* rColor.swift */,
+				7361CD2D27FED3F70062147D /* rTime.swift */,
+				7361CD2E27FED3F70062147D /* rDevice.swift */,
+				7361CD2F27FED3F70062147D /* rLocation.swift */,
+				7361CD3027FED3F70062147D /* rScreen.swift */,
 			);
-			path = BaseRoot;
+			path = RBaseScreen;
+			sourceTree = "<group>";
+		};
+		73F44ED528A0A5740059050C /* BaseMethod */ = {
+			isa = PBXGroup;
+			children = (
+				739ACC2D29125B30009E2C97 /* GradientCustomView.swift */,
+				73F44ED628A0A5960059050C /* BaseNavigationController.swift */,
+				739ACC2F29125B5E009E2C97 /* RVCManager.swift */,
+			);
+			path = BaseMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +315,10 @@
 				73B735FA28829E5B00990F65 /* Button+Extension.swift in Sources */,
 				73138A1B2885AB0C00F7C517 /* Log.swift in Sources */,
 				7361CD3827FED3F70062147D /* String+Extension.swift in Sources */,
+				739ACC3029125B5F009E2C97 /* RVCManager.swift in Sources */,
 				7361CD3527FED3F70062147D /* Date+Extension.swift in Sources */,
 				7361CD3E27FED3F70062147D /* rDevice.swift in Sources */,
+				739ACC2E29125B30009E2C97 /* GradientCustomView.swift in Sources */,
 				7361CD3227FED3F70062147D /* Int+Extension.swift in Sources */,
 				7361CD3F27FED3F70062147D /* rLocation.swift in Sources */,
 				7361CD3D27FED3F70062147D /* rTime.swift in Sources */,
