@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RVCManager {
+public class RVCManager {
     public class func getCurrentVC() -> UIViewController {
         let rootVc = UIApplication.shared.keyWindow?.rootViewController
         let currentVc = getCurrentVcFrom(rootVc!)

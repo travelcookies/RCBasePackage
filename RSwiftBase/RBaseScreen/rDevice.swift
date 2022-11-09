@@ -96,11 +96,4 @@ public struct rDevice {
     public let deviceModel = UIDevice.current.model
     /// 当前机子信息
     public var infoDic = Bundle.main.infoDictionary
-    /// 获取App的版本
-//    let appVersion = rDevice.share.infoDic?["CFBundleShortVersionString"] ?? ""
-    ////    self.infoDic?["CFBundleShortVersionString"]
-//    /// 获取App的build版本
-//    let appBuildVersion = rDevice.share.infoDic?["CFBundleVersion"] ?? ""
-//    /// 获取App的名称
-//    let appName = rDevice.share.infoDic?["CFBundleDisplayName"] ?? ""
 }

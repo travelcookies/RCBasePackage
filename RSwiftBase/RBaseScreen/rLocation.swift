@@ -9,8 +9,6 @@ import CoreLocation
 import Foundation
 import UIKit
 public struct rLocation {
-
-
     /// 跳转到系统定位设置页面
     public static func jumpLocationSetting() {
         let alert = UIAlertController(title: "定位服务已关闭", message: "我们需要通过您的地理位置信息获取您周边的信息,您需要打开定位服务,才可以为您服务", preferredStyle: .alert)
