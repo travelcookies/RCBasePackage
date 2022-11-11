@@ -33,7 +33,7 @@ public struct rScreen {
     }
 
     /// 状态栏高度
-    func kStatusBarHeight() -> CGFloat {
+    public static func kStatusBarHeight() -> CGFloat {
         var statusBarHeight: CGFloat = 0
         if #available(iOS 13.0, *) {
             let window = UIApplication.shared.windows.first
