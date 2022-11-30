@@ -11,6 +11,8 @@
 		73138A1B2885AB0C00F7C517 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73138A1A2885AB0C00F7C517 /* Log.swift */; };
 		7334BC84282A64A000ED2EDE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7334BC83282A64A000ED2EDE /* UIView+Extension.swift */; };
 		7334BC88282A66F100ED2EDE /* normal in Resources */ = {isa = PBXBuildFile; fileRef = 7334BC87282A66F100ED2EDE /* normal */; };
+		733B22452936ED98003AB864 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733B22442936ED98003AB864 /* ColorExtention.swift */; };
+		733B22472936F240003AB864 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733B22462936F240003AB864 /* TextFieldExtension.swift */; };
 		733BEB09289909FE004CE59A /* BaseR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733BEB08289909FE004CE59A /* BaseR.swift */; };
 		733BEB1828990C1F004CE59A /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733BEB1728990C1F004CE59A /* ExtensionDate.swift */; };
 		733BEB1A28991218004CE59A /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733BEB1928991218004CE59A /* ExtensionString.swift */; };
@@ -51,6 +53,8 @@
 		73138A1A2885AB0C00F7C517 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		7334BC83282A64A000ED2EDE /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		7334BC87282A66F100ED2EDE /* normal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = normal; sourceTree = SOURCE_ROOT; };
+		733B22442936ED98003AB864 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
+		733B22462936F240003AB864 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		733BEB08289909FE004CE59A /* BaseR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseR.swift; sourceTree = "<group>"; };
 		733BEB1728990C1F004CE59A /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		733BEB1928991218004CE59A /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				7334BC83282A64A000ED2EDE /* UIView+Extension.swift */,
 				73B735F928829E5B00990F65 /* Button+Extension.swift */,
 				73F44ED828A0A5E20059050C /* AlertVCExtention.swift */,
+				733B22442936ED98003AB864 /* ColorExtention.swift */,
+				733B22462936F240003AB864 /* TextFieldExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 				73F44ED928A0A5E20059050C /* AlertVCExtention.swift in Sources */,
 				7334BC84282A64A000ED2EDE /* UIView+Extension.swift in Sources */,
 				7300F715286DAC7D006DCE84 /* Async.swift in Sources */,
+				733B22452936ED98003AB864 /* ColorExtention.swift in Sources */,
 				7361CD4027FED3F70062147D /* rScreen.swift in Sources */,
 				73B735FA28829E5B00990F65 /* Button+Extension.swift in Sources */,
 				73138A1B2885AB0C00F7C517 /* Log.swift in Sources */,
@@ -322,6 +329,7 @@
 				7361CD3227FED3F70062147D /* Int+Extension.swift in Sources */,
 				7361CD3F27FED3F70062147D /* rLocation.swift in Sources */,
 				7361CD3D27FED3F70062147D /* rTime.swift in Sources */,
+				733B22472936F240003AB864 /* TextFieldExtension.swift in Sources */,
 				7361CD3C27FED3F70062147D /* rColor.swift in Sources */,
 				73F44ED728A0A5960059050C /* BaseNavigationController.swift in Sources */,
 				7361CD3A27FED3F70062147D /* rFont.swift in Sources */,
@@ -553,6 +561,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roc.RSwiftBaseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -571,6 +582,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roc.RSwiftBaseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

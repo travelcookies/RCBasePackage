@@ -19,6 +19,11 @@ class RSwiftBaseTests: XCTestCase {
 
     func testExample() throws {
         print(rTime.returnFutureByMonthWeekday(count: 5))
+        
+        let color = UIColor.xp.hex(hexValue: "#213321", a: 1.0)
+        
+        print(color.xp.toHexString())
+
     }
 
 //
