@@ -1,0 +1,6 @@
+framework module Pods_RSwiftBase_RSwiftBaseTests {
+  umbrella header "Pods-RSwiftBase-RSwiftBaseTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

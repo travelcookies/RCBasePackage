@@ -34,7 +34,7 @@ public extension XP where Base == Int {
             return String(format: "%d分钟%d秒", base / 60, base % 60)
         }
         if base >= 60 * 60 {
-            return String(format: "%d小时%d分钟%d秒", base / (60 * 60), (base % (60 * 60)) / 60, ((base % (60 * 60)) / 60) % 60)
+            return String(format: "%d小时%d分钟%d秒", base / (60 * 60), (base % (60 * 60)) / 60, base % 60)
         }
         return "0秒"
     }

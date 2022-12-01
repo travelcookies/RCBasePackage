@@ -8,6 +8,9 @@
 import RSwiftBase
 import XCTest
 
+import Quick
+import Nimble
+
 class RSwiftBaseTests: XCTestCase {
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,10 +23,9 @@ class RSwiftBaseTests: XCTestCase {
     func testExample() throws {
         print(rTime.returnFutureByMonthWeekday(count: 5))
         
-        let color = UIColor.xp.hex(hexValue: "#213321", a: 1.0)
+        let color = UIColor.xp.hexa(hexValue: "#213321", a: 1.0)
         
-        print(color.xp.toHexString())
-
+        XCTAssert(color.xp.toHexString() == "#213321", "当月第一天是星期几")
     }
 
 //
