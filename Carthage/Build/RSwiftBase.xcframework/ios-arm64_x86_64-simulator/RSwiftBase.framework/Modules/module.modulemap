@@ -6,6 +6,6 @@ framework module RSwiftBase {
 }
 
 module RSwiftBase.Swift {
-    header "RSwiftBase-Swift.h"
-    requires objc
+  header "RSwiftBase-Swift.h"
+  requires objc
 }

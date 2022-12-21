@@ -1,0 +1,298 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RSwiftBase
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CommonCrypto
+import CoreLocation
+import Foundation
+@_exported import RSwiftBase
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+public struct rNotification {
+}
+extension UIKit.UIView : RSwiftBase.XPCompatible {
+}
+extension RSwiftBase.XP where Base == UIKit.UIView {
+  public static func loadFromNib(_ nibname: Swift.String? = nil) -> RSwiftBase.XP<Base>
+}
+extension RSwiftBase.XP where Base : UIKit.UIView {
+  public func addCorner(conrners: UIKit.UIRectCorner, radius: CoreFoundation.CGFloat)
+  public func addCorner(conrners: UIKit.UIRectCorner, radius: CoreFoundation.CGFloat, _ roundedRect: CoreFoundation.CGRect)
+  public func removeSubView()
+  public var x: CoreFoundation.CGFloat {
+    get
+    set(newVal)
+  }
+  public var y: CoreFoundation.CGFloat {
+    get
+    set(newVal)
+  }
+  public var height: CoreFoundation.CGFloat {
+    get
+    set(newVal)
+  }
+  public var width: CoreFoundation.CGFloat {
+    get
+    set(newVal)
+  }
+  public var left: CoreFoundation.CGFloat {
+    get
+    set(newVal)
+  }
+  public var right: CoreFoundation.CGFloat {
+    get
+    set(newVal)
+  }
+  public var top: CoreFoundation.CGFloat {
+    get
+    set(newVal)
+  }
+  public var bottom: CoreFoundation.CGFloat {
+    get
+    set(newVal)
+  }
+  public var centerX: CoreFoundation.CGFloat {
+    get
+    set(newVal)
+  }
+  public var centerY: CoreFoundation.CGFloat {
+    get
+    set(newVal)
+  }
+  public var middleX: CoreFoundation.CGFloat {
+    get
+  }
+  public var middleY: CoreFoundation.CGFloat {
+    get
+  }
+  public var middlePoint: CoreFoundation.CGPoint {
+    get
+  }
+}
+public struct Async {
+  public typealias Task = () -> Swift.Void
+  public static func async(_ task: @escaping RSwiftBase.Async.Task)
+  public static func async(_ task: @escaping RSwiftBase.Async.Task, _ mainTask: @escaping RSwiftBase.Async.Task)
+  @discardableResult
+  public static func asyncDelay(_ seconds: Swift.Double, _ task: @escaping RSwiftBase.Async.Task) -> Dispatch.DispatchWorkItem
+  @discardableResult
+  public static func asyncDelay(_ seconds: Swift.Double, _ task: @escaping RSwiftBase.Async.Task, _ mainTask: @escaping RSwiftBase.Async.Task) -> Dispatch.DispatchWorkItem
+}
+extension UIKit.UIColor : RSwiftBase.XPCompatible {
+}
+extension RSwiftBase.XP where Base == UIKit.UIColor {
+  public func toHexString() -> Swift.String
+  public static func hexa(hexString: Swift.String, a: CoreFoundation.CGFloat) -> (UIKit.UIColor)
+  public static func hex(_ hexString: Swift.String) -> (UIKit.UIColor)
+}
+public struct rScreen {
+  public static let bounds: CoreFoundation.CGRect
+  public static let width: CoreFoundation.CGFloat
+  public static let height: CoreFoundation.CGFloat
+  public static var isFullScreen: Swift.Bool {
+    get
+  }
+  public static func kStatusBarHeight() -> CoreFoundation.CGFloat
+}
+extension RSwiftBase.rScreen {
+  public static let iPhone4: Swift.Bool
+  public static let iPhone5: Swift.Bool
+  public static let iPhone6: Swift.Bool
+  public static let iPhone6P: Swift.Bool
+  public static let iPhoneX: Swift.Bool
+  public static func isIPhoneX() -> Swift.Bool
+}
+extension RSwiftBase.rScreen {
+  public static let statusHeight: CoreFoundation.CGFloat
+  public static let naviBarHeight: CoreFoundation.CGFloat
+  public static let navigationBarHeight: CoreFoundation.CGFloat
+  public static let tabBarHeight: CoreFoundation.CGFloat
+  public static let safeAreaBottom: CoreFoundation.CGFloat
+  public static let safeAreaTop: CoreFoundation.CGFloat
+}
+extension RSwiftBase.XP where Base == UIKit.UIButton {
+  public enum ButtonContentLayoutStyle : Swift.Int {
+    case normal
+    case centerImageRight
+    case centerImageTop
+    case centerImageBottom
+    case leftImageLeft
+    case leftImageRight
+    case rightImageLeft
+    case rightImageRight
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public func contentLayout(_ layoutStyle: RSwiftBase.XP<Base>.ButtonContentLayoutStyle, _ padding: CoreFoundation.CGFloat, periphery: CoreFoundation.CGFloat)
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) convenience public init(imageName: Swift.String, _ bgImageName: Swift.String? = nil)
+}
+public struct R {
+  public static func log(_ items: Any..., separator: Swift.String = " ", _ file: Swift.String = #file, funcName: Swift.String = #function, lineNum: Swift.Int = #line)
+}
+extension Swift.String : RSwiftBase.XPCompatible {
+}
+extension RSwiftBase.XP where Base == Swift.String {
+  public var md5: Swift.String {
+    get
+  }
+  public func urlEncoded() -> Swift.String
+  public func urlDecoded() -> Swift.String
+  public func toDictionary() -> [Swift.String : Any?]
+  public subscript(r: Swift.Range<Swift.Int>) -> Swift.String {
+    get
+  }
+}
+extension RSwiftBase.XP where Base == Swift.String {
+  public func widthForComment(fontSize: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat = 15) -> CoreFoundation.CGFloat
+  public func heightForComment(fontSize: CoreFoundation.CGFloat, width: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+  public func heightForComment(fontSize: CoreFoundation.CGFloat, width: CoreFoundation.CGFloat, maxHeight: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+}
+@_hasMissingDesignatedInitializers public class RVCManager {
+  public class func getCurrentVC() -> UIKit.UIViewController
+  @objc deinit
+}
+extension Foundation.Date : RSwiftBase.XPCompatible {
+}
+extension RSwiftBase.XP where Base == Foundation.Date {
+  public var year: Swift.Int {
+    get
+  }
+  public var month: Swift.Int {
+    get
+  }
+  public var day: Swift.Int {
+    get
+  }
+  public var weakDay: Swift.Int {
+    get
+  }
+  public var currentMonthNumber: Swift.Int {
+    get
+  }
+  public var firstWeekDay: Swift.Int {
+    get
+  }
+  public var isToday: Swift.Bool {
+    get
+  }
+  public var isCurrentMonth: Swift.Bool {
+    get
+  }
+  public var timeStamp: Swift.String {
+    get
+  }
+  public var milliStamp: Swift.String {
+    get
+  }
+}
+public struct rDevice {
+  public static let share: RSwiftBase.rDevice
+  public let name: Swift.String
+  public let deviceName: Swift.String
+  public let sysName: Swift.String
+  public let sysVersion: Swift.String
+  public let deviceUUID: Swift.String?
+  public let deviceModel: Swift.String
+  public var infoDic: [Swift.String : Any]?
+}
+extension Swift.Int : RSwiftBase.XPCompatible {
+}
+extension RSwiftBase.XP where Base == Swift.Int {
+  @discardableResult
+  public func fen2YuanDecimalFormatterValue() -> Swift.String?
+  public func timeToStringFormatterValue() -> Swift.String
+}
+extension RSwiftBase.XP where Base == Swift.Int {
+  public var hex: UIKit.UIColor {
+    get
+  }
+  public func hexa(_ a: CoreFoundation.CGFloat) -> UIKit.UIColor
+}
+public struct rLocation {
+  public static func jumpLocationSetting()
+  public static func isEnableLocationPermissions() -> Swift.Bool
+}
+public struct rTime {
+  public static func returnNearByMonth(count: Swift.Int) -> [Swift.String]
+  public static func returnFutureByMonth(count: Swift.Int) -> [Swift.String]
+  public static func returnFutureByMonthWeekday(count: Swift.Int) -> [Swift.String]
+  public static func returnNearByYear(count: Swift.Int) -> [Swift.String]
+  public static func returnYear() -> Swift.String
+  public static func dateTimeYYYYMMDD(time: Swift.Int64, formatString: Swift.String? = "yyyy.MM.dd") -> Swift.String
+  public static func dateTimeYYYYMMDD(string: Swift.String, formatString: Swift.String? = "yyyy-MM-dd HH:mm:ss") -> Foundation.TimeInterval
+  public static func returnMonthDayHourMinute(timeStr: Swift.String) -> Swift.String
+  public static func currentYear() -> Swift.Int
+  public static func currentMonth() -> Swift.Int
+  public static func currentDay() -> Swift.Int
+  public static func currentDateMM() -> Swift.String
+  public static func currentDate() -> Swift.String
+  public static func currentDetailsDate() -> Swift.String
+  public static func currentWeekDay() -> Swift.Int
+  public static func weekDay(_ date: Foundation.Date) -> Swift.Int
+  public static func weekdayStringWithDate(_ date: Foundation.Date) -> Swift.String
+  public static func countOfDaysInCurrentMonth() -> Swift.Int
+  public static func firstWeekDayInCurrentMonth() -> Swift.Int
+  public static func getCountOfDaysInMonth(year: Swift.Int, month: Swift.Int) -> Swift.Int
+  public static func getfirstWeekDayInMonth(year: Swift.Int, month: Swift.Int) -> Swift.Int
+  public static func dateToDateString(_ date: Foundation.Date, dateFormat: Swift.String) -> Swift.String
+  public static func dateStringToDate(_ dateStr: Swift.String) -> Foundation.Date
+  public static func timeStringToDate(_ dateStr: Swift.String) -> Foundation.Date
+  public static func dateDifference(_ dateA: Foundation.Date, from dateB: Foundation.Date) -> Swift.Double
+  public static func compareOneDay(oneDay: Foundation.Date, withAnotherDay anotherDay: Foundation.Date) -> Swift.Int
+  public static func stringToTimeStamp(_ stringTime: Swift.String) -> Swift.Int
+  public static func timeStampToString(_ timeStamp: Swift.String) -> Swift.String
+  public static func timeStampToStringDetail(_ timeStamp: Swift.String) -> Swift.String
+  public static func timeStampToStringDetailHHMM(_ timeStamp: Swift.String) -> Swift.String
+  public static func timeStampToHHMMSS(_ timeStamp: Swift.String) -> Swift.String
+  public static func timeStampToHHMM(_ timeStamp: Swift.String) -> Swift.String
+  public static func getStamp() -> Swift.Int
+  public static func numberToChina(monthNum: Swift.Int) -> Swift.String
+  public static func add0BeforeNumber(_ number: Swift.Int) -> Swift.String
+  public static func compareCurrentTime(str: Swift.String) -> Swift.String
+  public static func comparePastTime(startTime: Swift.String) -> Swift.String
+  public static func durationBetween(beginTime: Swift.String, endTime: Swift.String) -> Swift.String
+}
+extension RSwiftBase.XP where Base == UIKit.UITextField {
+  public func setTextFieldNormalLeftV(size: CoreFoundation.CGSize = CGSize(width: 20, height: 30))
+}
+public struct rColor {
+  public static func rgb(r: CoreFoundation.CGFloat, g: CoreFoundation.CGFloat, b: CoreFoundation.CGFloat) -> UIKit.UIColor
+  public static func rgba(r: CoreFoundation.CGFloat, g: CoreFoundation.CGFloat, b: CoreFoundation.CGFloat, a: CoreFoundation.CGFloat) -> UIKit.UIColor
+  public static func hexa(hexValue: Swift.Int, a: CoreFoundation.CGFloat) -> (UIKit.UIColor)
+  public static func hex(hexValue: Swift.Int) -> (UIKit.UIColor)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseNavigationController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func pushViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool)
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct rFont {
+  public static func font(font: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func font(_ font: CoreFoundation.CGFloat, _ weight: UIKit.UIFont.Weight) -> UIKit.UIFont
+}
+public struct XP<Base> {
+}
+public protocol XPCompatible {
+}
+extension RSwiftBase.XPCompatible {
+  public static var xp: RSwiftBase.XP<Self>.Type {
+    get
+    set
+  }
+  public var xp: RSwiftBase.XP<Self> {
+    get
+    set
+  }
+}
