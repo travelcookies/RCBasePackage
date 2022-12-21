@@ -18,7 +18,7 @@ class ExtensionUIColorSpaceTests: QuickSpec {
         var subjectColor = UIColor()
         describe("测试#22222字符段设置颜色") {
             beforeEach {
-                subjectColor = UIColor.xp.hexa(hexValue: "#213321", a: 1.0)
+                subjectColor = UIColor.xp.hexa(hexString: "#213321", a: 1.0)
 
 //                XCTAssert(color.xp.toHexString() == "#213321", "当月第一天是星期几")
             }

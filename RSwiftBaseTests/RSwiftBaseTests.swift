@@ -23,7 +23,7 @@ class RSwiftBaseTests: XCTestCase {
     func testExample() throws {
         print(rTime.returnFutureByMonthWeekday(count: 5))
         
-        let color = UIColor.xp.hexa(hexValue: "#213321", a: 1.0)
+        let color = UIColor.xp.hexa(hexString: "#213321", a: 1.0)
         
         XCTAssert(color.xp.toHexString() == "#213321", "当月第一天是星期几")
     }

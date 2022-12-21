@@ -24,8 +24,8 @@ public extension XP where Base == UIColor {
     /// 16位 颜色设置 string 字符段
     /// - Parameter hexValue: #232214 string 字符
     /// - Returns: UIColor
-    static func hexa(hexValue: String, a: CGFloat) -> (UIColor) {
-        let hex = (hexValue as NSString).trimmingCharacters(in: .whitespacesAndNewlines)
+    static func hexa(hexString: String, a: CGFloat) -> (UIColor) {
+        let hex = (hexString as NSString).trimmingCharacters(in: .whitespacesAndNewlines)
         let scanner = Scanner(string: hex)
 
         if hex.hasPrefix("#") {
@@ -47,7 +47,7 @@ public extension XP where Base == UIColor {
         return UIColor(red: red, green: green, blue: blue, alpha: a)
     }
 
-    static func hex(hexValue: String) -> (UIColor) {
-        return hexa(hexValue: hexValue, a: 1.0)
+    static func hex(_ hexString: String) -> (UIColor) {
+        return hexa(hexString: hexString, a: 1.0)
     }
 }
