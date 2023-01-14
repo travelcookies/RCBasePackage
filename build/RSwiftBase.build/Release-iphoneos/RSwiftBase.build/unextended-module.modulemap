@@ -1,0 +1,10 @@
+framework module RSwiftBase {
+  umbrella header "RSwiftBase.h"
+
+  export *
+  module * { export * }
+}
+
+module RSwiftBase.__Swift {
+  exclude header "RSwiftBase-Swift.h"
+}

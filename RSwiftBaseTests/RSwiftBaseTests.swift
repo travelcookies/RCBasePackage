@@ -8,8 +8,8 @@
 import RSwiftBase
 import XCTest
 
-import Quick
 import Nimble
+import Quick
 
 class RSwiftBaseTests: XCTestCase {
     override func setUpWithError() throws {
@@ -22,10 +22,31 @@ class RSwiftBaseTests: XCTestCase {
 
     func testExample() throws {
         print(rTime.returnFutureByMonthWeekday(count: 5))
-        
+
         let color = UIColor.xp.hexa(hexString: "#213321", a: 1.0)
-        
+
         XCTAssert(color.xp.toHexString() == "#213321", "当月第一天是星期几")
+    }
+
+    func testSExample() throws {
+        let mmm = timestampGet()
+
+//        var numb = "1221312 12312321"
+//        var newTime = ""
+//        numb.replacingOccurrences(of: " ", with: "+")
+        print(mmm)
+
+//        XCTAssert(color.xp.toHexString() == "#213321", "当月第一天是星期几")
+    }
+
+    /// 获取当前格式化时间
+    fileprivate func timestampGet() -> String {
+        let date = Date()
+        let timeFormatter = DateFormatter()
+        // 日期显示格式，可按自己需求显示
+        timeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let strNowTime = timeFormatter.string(from: date) as String
+        return strNowTime
     }
 
 //
