@@ -6,6 +6,7 @@ target 'RSwiftBase' do
   use_frameworks!
 
   # Pods for RSwiftBase
+  pod 'HandyJSON'
 
   target 'RSwiftBaseTests' do
     # Pods for testing

@@ -1,20 +1,24 @@
 PODS:
+  - HandyJSON (5.0.2)
   - Nimble (10.0.0)
   - Quick (5.0.1)
 
 DEPENDENCIES:
+  - HandyJSON
   - Nimble
   - Quick
 
 SPEC REPOS:
   trunk:
+    - HandyJSON
     - Nimble
     - Quick
 
 SPEC CHECKSUMS:
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
   Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
 
-PODFILE CHECKSUM: c144281a328043d6b6f3754693a8b6dd348693e8
+PODFILE CHECKSUM: d2aa550becaf06c1248da58de35bb5bcaeca06be
 
 COCOAPODS: 1.11.3
