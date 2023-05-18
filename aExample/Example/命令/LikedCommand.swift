@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class LikedCommand: Command {
+class LikedCommand: XPCommand {
     override func execute() {
         super.execute()
         /// 执行点赞操作

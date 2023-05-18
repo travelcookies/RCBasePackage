@@ -8,15 +8,15 @@
 import Foundation
 
 class CommandManager {
-    var arrayCommands: [Command] = []
+    var arrayCommands: [XPCommand] = []
     static let share = CommandManager()
 
-    func executeCommand(cmd: Command?, completion: CommandCompletionCallBack?) {
+    func executeCommand(cmd: XPCommand?, completion: CommandCompletionCallBack?) {
         guard let cmd = cmd else {
             return
         }
         // 如果命令正在执行不做处理, 否则添加并执行命令
-        if _isExecutingCommand(cmd: cmd) {
+        if !_isExecutingCommand(cmd: cmd) {
             // 添加到命令容器当中
             arrayCommands.append(cmd)
             // 设置具体命令执行完成后的回调
@@ -26,7 +26,7 @@ class CommandManager {
         }
     }
 
-    func cancelCommand(cmd: Command?) {
+    func cancelCommand(cmd: XPCommand?) {
         guard let cmd = cmd else {
             return
         }
@@ -39,14 +39,14 @@ class CommandManager {
         cmd.cancel()
     }
 
-    fileprivate func _isExecutingCommand(cmd: Command?) -> Bool {
+    func _isExecutingCommand(cmd: XPCommand?) -> Bool {
         guard let cmd = cmd else {
             return false
         }
-        arrayCommands.forEach { cmd1 in
-            // 当前命令正在执行
-            if (cmd as! AnyHashable) == (cmd1 as! AnyHashable) {
-//                return false
+
+        for model in arrayCommands {
+            if cmd == model {
+                return true
             }
         }
 

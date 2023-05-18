@@ -20,7 +20,7 @@
 		7373C3D52A148308000550FC /* AdapterTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C3CD2A148307000550FC /* AdapterTarget.swift */; };
 		7373C3D62A148308000550FC /* explain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C3CE2A148307000550FC /* explain.swift */; };
 		7373C3D72A148308000550FC /* CommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C3CF2A148307000550FC /* CommandManager.swift */; };
-		7373C3D82A148308000550FC /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C3D02A148307000550FC /* Command.swift */; };
+		7373C3D82A148308000550FC /* XPCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C3D02A148307000550FC /* XPCommand.swift */; };
 		7373C3D92A148308000550FC /* LikedCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C3D12A148307000550FC /* LikedCommand.swift */; };
 		7373C3DB2A148308000550FC /* OldTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C3D32A148307000550FC /* OldTarget.swift */; };
 /* End PBXBuildFile section */
@@ -60,7 +60,7 @@
 		7373C3CD2A148307000550FC /* AdapterTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterTarget.swift; sourceTree = "<group>"; };
 		7373C3CE2A148307000550FC /* explain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = explain.swift; sourceTree = "<group>"; };
 		7373C3CF2A148307000550FC /* CommandManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandManager.swift; sourceTree = "<group>"; };
-		7373C3D02A148307000550FC /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		7373C3D02A148307000550FC /* XPCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCommand.swift; sourceTree = "<group>"; };
 		7373C3D12A148307000550FC /* LikedCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedCommand.swift; sourceTree = "<group>"; };
 		7373C3D32A148307000550FC /* OldTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldTarget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,7 +165,7 @@
 		7373C3DD2A14831C000550FC /* 命令 */ = {
 			isa = PBXGroup;
 			children = (
-				7373C3D02A148307000550FC /* Command.swift */,
+				7373C3D02A148307000550FC /* XPCommand.swift */,
 				7373C3D12A148307000550FC /* LikedCommand.swift */,
 				7373C3CF2A148307000550FC /* CommandManager.swift */,
 			);
@@ -321,7 +321,7 @@
 				7373C3972A148229000550FC /* Example.xcdatamodeld in Sources */,
 				7373C3D92A148308000550FC /* LikedCommand.swift in Sources */,
 				7373C3942A148229000550FC /* Persistence.swift in Sources */,
-				7373C3D82A148308000550FC /* Command.swift in Sources */,
+				7373C3D82A148308000550FC /* XPCommand.swift in Sources */,
 				7373C3DB2A148308000550FC /* OldTarget.swift in Sources */,
 				7373C3D52A148308000550FC /* AdapterTarget.swift in Sources */,
 				7373C3D72A148308000550FC /* CommandManager.swift in Sources */,

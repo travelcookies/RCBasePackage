@@ -6,9 +6,10 @@
 //
 
 import Foundation
-typealias CommandCompletionCallBack = (Command) -> Void
+typealias CommandCompletionCallBack = (XPCommand) -> Void
 
-class Command {
+class XPCommand {
+    let uuid: UInt32 = arc4random()
     /// 命令完成的回调
     var completion: CommandCompletionCallBack?
     /// 执行命令
@@ -27,8 +28,15 @@ class Command {
         // 释放
         completion = nil
 
-        CommandManager.share.arrayCommands?.removeAll(where: { cmd in
-            cmd as? AnyHashable == (self as? AnyHashable ?? nil)
+        CommandManager.share.arrayCommands.removeAll(where: { cmd in
+            cmd == self
         })
     }
+}
+
+extension XPCommand: Equatable {
+}
+
+func == (lhs: XPCommand, rhs: XPCommand) -> Bool {
+    return lhs.uuid == rhs.uuid
 }
