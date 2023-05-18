@@ -23,6 +23,13 @@
 		7373C3D82A148308000550FC /* XPCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C3D02A148307000550FC /* XPCommand.swift */; };
 		7373C3D92A148308000550FC /* LikedCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C3D12A148307000550FC /* LikedCommand.swift */; };
 		7373C3DB2A148308000550FC /* OldTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C3D32A148307000550FC /* OldTarget.swift */; };
+		73A9D9EC2A15CA4200AEE7A9 /* BaseObjectA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9D9EB2A15CA4200AEE7A9 /* BaseObjectA.swift */; };
+		73A9D9EE2A15CA6100AEE7A9 /* BaseObjectB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9D9ED2A15CA6100AEE7A9 /* BaseObjectB.swift */; };
+		73A9D9F02A15CAEC00AEE7A9 /* ObjectA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9D9EF2A15CAEC00AEE7A9 /* ObjectA1.swift */; };
+		73A9D9F22A15CB4900AEE7A9 /* ObjectA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9D9F12A15CB4900AEE7A9 /* ObjectA2.swift */; };
+		73A9D9F42A15CB7D00AEE7A9 /* ObjectB1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9D9F32A15CB7D00AEE7A9 /* ObjectB1.swift */; };
+		73A9D9F62A15CB8300AEE7A9 /* ObjectB2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9D9F52A15CB8300AEE7A9 /* ObjectB2.swift */; };
+		73A9D9F92A15CE2400AEE7A9 /* BusinessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9D9F82A15CE2400AEE7A9 /* BusinessObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,13 @@
 		7373C3D02A148307000550FC /* XPCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCommand.swift; sourceTree = "<group>"; };
 		7373C3D12A148307000550FC /* LikedCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedCommand.swift; sourceTree = "<group>"; };
 		7373C3D32A148307000550FC /* OldTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldTarget.swift; sourceTree = "<group>"; };
+		73A9D9EB2A15CA4200AEE7A9 /* BaseObjectA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObjectA.swift; sourceTree = "<group>"; };
+		73A9D9ED2A15CA6100AEE7A9 /* BaseObjectB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObjectB.swift; sourceTree = "<group>"; };
+		73A9D9EF2A15CAEC00AEE7A9 /* ObjectA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectA1.swift; sourceTree = "<group>"; };
+		73A9D9F12A15CB4900AEE7A9 /* ObjectA2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectA2.swift; sourceTree = "<group>"; };
+		73A9D9F32A15CB7D00AEE7A9 /* ObjectB1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectB1.swift; sourceTree = "<group>"; };
+		73A9D9F52A15CB8300AEE7A9 /* ObjectB2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectB2.swift; sourceTree = "<group>"; };
+		73A9D9F82A15CE2400AEE7A9 /* BusinessObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +127,7 @@
 		7373C3892A148229000550FC /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				73A9D9F72A15CE0100AEE7A9 /* 责任链 */,
 				7373C3DF2A148340000550FC /* 适配器 */,
 				7373C3DE2A14832D000550FC /* 桥接 */,
 				7373C3DD2A14831C000550FC /* 命令 */,
@@ -175,8 +190,12 @@
 		7373C3DE2A14832D000550FC /* 桥接 */ = {
 			isa = PBXGroup;
 			children = (
-				7373C3D32A148307000550FC /* OldTarget.swift */,
-				7373C3CD2A148307000550FC /* AdapterTarget.swift */,
+				73A9D9EB2A15CA4200AEE7A9 /* BaseObjectA.swift */,
+				73A9D9EF2A15CAEC00AEE7A9 /* ObjectA1.swift */,
+				73A9D9F12A15CB4900AEE7A9 /* ObjectA2.swift */,
+				73A9D9ED2A15CA6100AEE7A9 /* BaseObjectB.swift */,
+				73A9D9F32A15CB7D00AEE7A9 /* ObjectB1.swift */,
+				73A9D9F52A15CB8300AEE7A9 /* ObjectB2.swift */,
 			);
 			path = "桥接";
 			sourceTree = "<group>";
@@ -184,8 +203,18 @@
 		7373C3DF2A148340000550FC /* 适配器 */ = {
 			isa = PBXGroup;
 			children = (
+				7373C3D32A148307000550FC /* OldTarget.swift */,
+				7373C3CD2A148307000550FC /* AdapterTarget.swift */,
 			);
 			path = "适配器";
+			sourceTree = "<group>";
+		};
+		73A9D9F72A15CE0100AEE7A9 /* 责任链 */ = {
+			isa = PBXGroup;
+			children = (
+				73A9D9F82A15CE2400AEE7A9 /* BusinessObject.swift */,
+			);
+			path = "责任链";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,17 +347,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A9D9F22A15CB4900AEE7A9 /* ObjectA2.swift in Sources */,
 				7373C3972A148229000550FC /* Example.xcdatamodeld in Sources */,
 				7373C3D92A148308000550FC /* LikedCommand.swift in Sources */,
+				73A9D9F42A15CB7D00AEE7A9 /* ObjectB1.swift in Sources */,
+				73A9D9F62A15CB8300AEE7A9 /* ObjectB2.swift in Sources */,
 				7373C3942A148229000550FC /* Persistence.swift in Sources */,
 				7373C3D82A148308000550FC /* XPCommand.swift in Sources */,
 				7373C3DB2A148308000550FC /* OldTarget.swift in Sources */,
 				7373C3D52A148308000550FC /* AdapterTarget.swift in Sources */,
+				73A9D9EE2A15CA6100AEE7A9 /* BaseObjectB.swift in Sources */,
 				7373C3D72A148308000550FC /* CommandManager.swift in Sources */,
+				73A9D9F02A15CAEC00AEE7A9 /* ObjectA1.swift in Sources */,
 				7373C38D2A148229000550FC /* ContentView.swift in Sources */,
 				7373C3D62A148308000550FC /* explain.swift in Sources */,
 				7373C3D42A148308000550FC /* ADManager.swift in Sources */,
 				7373C38B2A148229000550FC /* ExampleApp.swift in Sources */,
+				73A9D9F92A15CE2400AEE7A9 /* BusinessObject.swift in Sources */,
+				73A9D9EC2A15CA4200AEE7A9 /* BaseObjectA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

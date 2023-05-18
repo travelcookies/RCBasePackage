@@ -17,23 +17,24 @@ final class ExampleTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    
-    func testOldTargetExample() throws {
-        let liked1 = LikedCommand()
-        let liked2 = LikedCommand()
+    func testBaseObjcetExample() throws {
+        let objcA = ObjectA1()
 
-        CommandManager.share.executeCommand(cmd: liked1) { cmd in
-            print("点赞命令完成回调 cmd1 === ", cmd)
-        }
+        let b1 = ObjectB1()
 
-        CommandManager.share.executeCommand(cmd: liked2) { cmd in
-            print("点赞命令完成回调 cmd1 === ", cmd)
-        }
+        objcA.objB = b1
 
-        CommandManager.share.executeCommand(cmd: liked1, completion: nil)
+        objcA.handle()
     }
 
-    
+    func testOldTargetExample() throws {
+//        AdapterTarget *adapterTarget = [AdapterTarget new];
+//        [adapterTarget adapertRequest];
+
+        let target = AdapterTarget()
+        target.adapertRequest()
+    }
+
     func testCommandExample() throws {
         let liked1 = LikedCommand()
         let liked2 = LikedCommand()

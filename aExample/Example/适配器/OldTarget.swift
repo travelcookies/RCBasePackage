@@ -9,5 +9,6 @@ import Foundation
 class OldTarget {
     /// 久经考验的旧处理方法
     func oldOperation() {
+        print("我是老代码")
     }
 }
