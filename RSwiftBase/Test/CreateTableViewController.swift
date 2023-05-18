@@ -12,7 +12,7 @@ class CreateTableViewController: UIViewController {
         let table = UITableView()
 
         //    table.register(UINib(nibName: "SZStoresLogisticsMsgTopCell", bundle: nil), forCellReuseIdentifier: SZStoresLogisticsMsgTopCell.rIdentifier)
-
+        
         table.separatorStyle = .none
         table.delegate = self
         table.dataSource = self
@@ -24,6 +24,11 @@ class CreateTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.view.addSubview(tableV)
+//        tableV.snp.makeConstraints { make in
+//            make.edges.equalTo(self.view)
+//        }
+
     }
 }
 
