@@ -32,6 +32,7 @@
 		7361CD3F27FED3F70062147D /* rLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD2F27FED3F70062147D /* rLocation.swift */; };
 		7361CD4027FED3F70062147D /* rScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CD3027FED3F70062147D /* rScreen.swift */; };
 		7373C37D2A14811B000550FC /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373C37C2A14811B000550FC /* Example.swift */; };
+		7389601C2A272096008FA232 /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7389601B2A272096008FA232 /* UITableView+Ex.swift */; };
 		738996C52938A448000130E4 /* ExtensionSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738996C42938A448000130E4 /* ExtensionSpace.swift */; };
 		739ACC2E29125B30009E2C97 /* GradientCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739ACC2D29125B30009E2C97 /* GradientCustomView.swift */; };
 		739ACC3029125B5F009E2C97 /* RVCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739ACC2F29125B5E009E2C97 /* RVCManager.swift */; };
@@ -88,6 +89,7 @@
 		7361CD3027FED3F70062147D /* rScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rScreen.swift; sourceTree = "<group>"; };
 		7373C3582A147608000550FC /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7373C37C2A14811B000550FC /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		7389601B2A272096008FA232 /* UITableView+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
 		738996C42938A448000130E4 /* ExtensionSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSpace.swift; sourceTree = "<group>"; };
 		739ACC2D29125B30009E2C97 /* GradientCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientCustomView.swift; sourceTree = "<group>"; };
 		739ACC2F29125B5E009E2C97 /* RVCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVCManager.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				73F44ED828A0A5E20059050C /* AlertVCExtention.swift */,
 				733B22442936ED98003AB864 /* ColorExtention.swift */,
 				733B22462936F240003AB864 /* TextFieldExtension.swift */,
+				7389601B2A272096008FA232 /* UITableView+Ex.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				73138A1B2885AB0C00F7C517 /* Log.swift in Sources */,
 				7361CD3827FED3F70062147D /* String+Extension.swift in Sources */,
 				739ACC3029125B5F009E2C97 /* RVCManager.swift in Sources */,
+				7389601C2A272096008FA232 /* UITableView+Ex.swift in Sources */,
 				73FCF9E929A06BFE00CD58AF /* JsonManager.swift in Sources */,
 				73D8EEC12A243E7400435E19 /* CommandManager.swift in Sources */,
 				7361CD3527FED3F70062147D /* Date+Extension.swift in Sources */,
