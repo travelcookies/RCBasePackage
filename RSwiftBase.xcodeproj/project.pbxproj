@@ -72,7 +72,7 @@
 		7300F714286DAC7D006DCE84 /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
 		73138A1A2885AB0C00F7C517 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		7334BC83282A64A000ED2EDE /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		7334BC87282A66F100ED2EDE /* normal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = normal; sourceTree = SOURCE_ROOT; };
+		7334BC87282A66F100ED2EDE /* normal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = normal; path = RSwiftBaseTests/NeedCopy/normal; sourceTree = SOURCE_ROOT; };
 		733B22442936ED98003AB864 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
 		733B22462936F240003AB864 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		733BEB08289909FE004CE59A /* BaseR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseR.swift; sourceTree = "<group>"; };
@@ -237,8 +237,6 @@
 			children = (
 				73D8EEBB2A243DD500435E19 /* CanUse */,
 				7361CCDF27FECD6F0062147D /* RSwiftBase.h */,
-				73FCF9E029A06BFD00CD58AF /* Test */,
-				7334BC87282A66F100ED2EDE /* normal */,
 				7361CCE027FECD6F0062147D /* RSwiftBase.docc */,
 			);
 			path = RSwiftBase;
@@ -247,6 +245,7 @@
 		7361CCEA27FECD6F0062147D /* RSwiftBaseTests */ = {
 			isa = PBXGroup;
 			children = (
+				73CABD712AA85745007517EB /* NeedCopy */,
 				735429042AA07DD6002B609C /* Third Party */,
 				735429002AA02D7D002B609C /* Rx */,
 				73BF3EDD2A9F44BF00E84D53 /* other */,
@@ -306,13 +305,22 @@
 			path = other;
 			sourceTree = "<group>";
 		};
+		73CABD712AA85745007517EB /* NeedCopy */ = {
+			isa = PBXGroup;
+			children = (
+				7334BC87282A66F100ED2EDE /* normal */,
+				73FCF9E029A06BFD00CD58AF /* Test */,
+				73F44ED528A0A5740059050C /* BaseMethod */,
+				73D8EEBC2A243E7400435E19 /* Command */,
+			);
+			path = NeedCopy;
+			sourceTree = "<group>";
+		};
 		73D8EEBB2A243DD500435E19 /* CanUse */ = {
 			isa = PBXGroup;
 			children = (
 				739ACC3129125B81009E2C97 /* RBaseScreen */,
-				73D8EEBC2A243E7400435E19 /* Command */,
 				7300F713286DAC41006DCE84 /* dispatch */,
-				73F44ED528A0A5740059050C /* BaseMethod */,
 				7361CD1F27FED3F70062147D /* Extension */,
 			);
 			path = CanUse;
