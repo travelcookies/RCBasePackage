@@ -17,6 +17,11 @@
 		733BEB09289909FE004CE59A /* BaseR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733BEB08289909FE004CE59A /* BaseR.swift */; };
 		733BEB1828990C1F004CE59A /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733BEB1728990C1F004CE59A /* ExtensionDate.swift */; };
 		733BEB1A28991218004CE59A /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733BEB1928991218004CE59A /* ExtensionString.swift */; };
+		735429022AA02E10002B609C /* RxBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735429012AA02E10002B609C /* RxBehavior.swift */; };
+		735429092AA07DD6002B609C /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735429062AA07DD6002B609C /* ErrorTracker.swift */; };
+		7354290A2AA07DD6002B609C /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735429082AA07DD6002B609C /* ActivityIndicator.swift */; };
+		7354290C2AA07E3B002B609C /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354290B2AA07E3B002B609C /* Foo.swift */; };
+		7354290E2AA07F3F002B609C /* FooTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7354290D2AA07F3F002B609C /* FooTest.swift */; };
 		7361CCE127FECD6F0062147D /* RSwiftBase.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7361CCE027FECD6F0062147D /* RSwiftBase.docc */; };
 		7361CCE727FECD6F0062147D /* RSwiftBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7361CCDC27FECD6F0062147D /* RSwiftBase.framework */; };
 		7361CCEC27FECD6F0062147D /* RSwiftBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361CCEB27FECD6F0062147D /* RSwiftBaseTests.swift */; };
@@ -40,6 +45,7 @@
 		739E3DA529A249E0009ADA28 /* CreateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739E3DA429A249E0009ADA28 /* CreateTableViewCell.swift */; };
 		73B735F42882912300990F65 /* XPCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B735F32882912300990F65 /* XPCompatible.swift */; };
 		73B735FA28829E5B00990F65 /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B735F928829E5B00990F65 /* Button+Extension.swift */; };
+		73BF3EDF2A9F44D700E84D53 /* ContainsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BF3EDE2A9F44D700E84D53 /* ContainsTest.swift */; };
 		73D8EEC02A243E7400435E19 /* LikedCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8EEBD2A243E7400435E19 /* LikedCommand.swift */; };
 		73D8EEC12A243E7400435E19 /* CommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8EEBE2A243E7400435E19 /* CommandManager.swift */; };
 		73D8EEC22A243E7400435E19 /* XPCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8EEBF2A243E7400435E19 /* XPCommand.swift */; };
@@ -72,6 +78,11 @@
 		733BEB08289909FE004CE59A /* BaseR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseR.swift; sourceTree = "<group>"; };
 		733BEB1728990C1F004CE59A /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		733BEB1928991218004CE59A /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
+		735429012AA02E10002B609C /* RxBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBehavior.swift; sourceTree = "<group>"; };
+		735429062AA07DD6002B609C /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		735429082AA07DD6002B609C /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		7354290B2AA07E3B002B609C /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		7354290D2AA07F3F002B609C /* FooTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooTest.swift; sourceTree = "<group>"; };
 		7361CCDC27FECD6F0062147D /* RSwiftBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSwiftBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7361CCDF27FECD6F0062147D /* RSwiftBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSwiftBase.h; sourceTree = "<group>"; };
 		7361CCE027FECD6F0062147D /* RSwiftBase.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RSwiftBase.docc; sourceTree = "<group>"; };
@@ -97,6 +108,7 @@
 		739E3DA429A249E0009ADA28 /* CreateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTableViewCell.swift; sourceTree = "<group>"; };
 		73B735F32882912300990F65 /* XPCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCompatible.swift; sourceTree = "<group>"; };
 		73B735F928829E5B00990F65 /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
+		73BF3EDE2A9F44D700E84D53 /* ContainsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainsTest.swift; sourceTree = "<group>"; };
 		73D8EEBD2A243E7400435E19 /* LikedCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedCommand.swift; sourceTree = "<group>"; };
 		73D8EEBE2A243E7400435E19 /* CommandManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandManager.swift; sourceTree = "<group>"; };
 		73D8EEBF2A243E7400435E19 /* XPCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCommand.swift; sourceTree = "<group>"; };
@@ -156,6 +168,49 @@
 			path = BaseR;
 			sourceTree = "<group>";
 		};
+		735429002AA02D7D002B609C /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				735429012AA02E10002B609C /* RxBehavior.swift */,
+				735429032AA07261002B609C /* MVVM */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		735429032AA07261002B609C /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				7354290B2AA07E3B002B609C /* Foo.swift */,
+				7354290D2AA07F3F002B609C /* FooTest.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		735429042AA07DD6002B609C /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				735429052AA07DD6002B609C /* RxErrorTracker */,
+				735429072AA07DD6002B609C /* RxActivityIndicator */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		735429052AA07DD6002B609C /* RxErrorTracker */ = {
+			isa = PBXGroup;
+			children = (
+				735429062AA07DD6002B609C /* ErrorTracker.swift */,
+			);
+			path = RxErrorTracker;
+			sourceTree = "<group>";
+		};
+		735429072AA07DD6002B609C /* RxActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				735429082AA07DD6002B609C /* ActivityIndicator.swift */,
+			);
+			path = RxActivityIndicator;
+			sourceTree = "<group>";
+		};
 		7361CCD227FECD6F0062147D = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +247,9 @@
 		7361CCEA27FECD6F0062147D /* RSwiftBaseTests */ = {
 			isa = PBXGroup;
 			children = (
+				735429042AA07DD6002B609C /* Third Party */,
+				735429002AA02D7D002B609C /* Rx */,
+				73BF3EDD2A9F44BF00E84D53 /* other */,
 				7373C37B2A148103000550FC /* example */,
 				733BEB07289909DE004CE59A /* BaseR */,
 				7361CCEB27FECD6F0062147D /* RSwiftBaseTests.swift */,
@@ -238,6 +296,14 @@
 				7361CD3027FED3F70062147D /* rScreen.swift */,
 			);
 			path = RBaseScreen;
+			sourceTree = "<group>";
+		};
+		73BF3EDD2A9F44BF00E84D53 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				73BF3EDE2A9F44D700E84D53 /* ContainsTest.swift */,
+			);
+			path = other;
 			sourceTree = "<group>";
 		};
 		73D8EEBB2A243DD500435E19 /* CanUse */ = {
@@ -548,11 +614,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				733BEB1A28991218004CE59A /* ExtensionString.swift in Sources */,
+				73BF3EDF2A9F44D700E84D53 /* ContainsTest.swift in Sources */,
 				733BEB1828990C1F004CE59A /* ExtensionDate.swift in Sources */,
 				7373C37D2A14811B000550FC /* Example.swift in Sources */,
+				7354290E2AA07F3F002B609C /* FooTest.swift in Sources */,
+				735429092AA07DD6002B609C /* ErrorTracker.swift in Sources */,
 				7361CCEC27FECD6F0062147D /* RSwiftBaseTests.swift in Sources */,
+				7354290A2AA07DD6002B609C /* ActivityIndicator.swift in Sources */,
+				735429022AA02E10002B609C /* RxBehavior.swift in Sources */,
 				738996C52938A448000130E4 /* ExtensionSpace.swift in Sources */,
 				733BEB09289909FE004CE59A /* BaseR.swift in Sources */,
+				7354290C2AA07E3B002B609C /* Foo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

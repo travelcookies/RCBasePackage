@@ -71,17 +71,17 @@ class BaseR: XCTestCase {
     }
 
     func testW5() {
-        let dict: [String: Any] = ["payAmount": 0.00]
-
-//        guard let dict = response as? [String: Any] else {
+//        let dict: [String: Any] = ["payAmount": 0.00]
+//
+////        guard let dict = response as? [String: Any] else {
+////            return
+////        }
+//
+//        guard let payAmount = dict["payAmount"] else {
+//            print("payAmount_no")
 //            return
 //        }
-
-        guard let payAmount = dict["payAmount"] else {
-            print("payAmount_no")
-            return
-        }
-let double = String(payAmount)
-        print("payAmount", payAmount)
+//        let double = String(payAmount)
+//        print("payAmount", payAmount)
     }
 }
