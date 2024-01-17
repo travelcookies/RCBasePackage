@@ -1,4 +1,7 @@
 PODS:
+  - CocoaLumberjack/Core (3.8.1)
+  - CocoaLumberjack/Swift (3.8.1):
+    - CocoaLumberjack/Core
   - HandyJSON (5.0.2)
   - Nimble (10.0.0)
   - Quick (5.0.1)
@@ -10,6 +13,7 @@ PODS:
   - RxSwift (6.2.0)
 
 DEPENDENCIES:
+  - CocoaLumberjack/Swift
   - HandyJSON
   - Nimble
   - Quick
@@ -18,6 +22,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - CocoaLumberjack
     - HandyJSON
     - Nimble
     - Quick
@@ -26,6 +31,7 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: 5c7e64cdb877770859bddec4d3d5a0d7c9299df9
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
   Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
@@ -33,6 +39,6 @@ SPEC CHECKSUMS:
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
 
-PODFILE CHECKSUM: 4ec791aeee7f4dd3aea5e47101a3b15c21170d70
+PODFILE CHECKSUM: 94e450e3ad9309563e1b9c4c644f46c9f0520531
 
 COCOAPODS: 1.11.3

@@ -7,7 +7,9 @@ target 'RSwiftBase' do
 
   # Pods for RSwiftBase
   pod 'HandyJSON'
-
+  pod 'RxSwift', '6.2.0'
+  pod 'RxCocoa', '6.2.0'
+  pod 'CocoaLumberjack/Swift'
   target 'RSwiftBaseTests' do
     # Pods for testing
     pod 'Quick'
