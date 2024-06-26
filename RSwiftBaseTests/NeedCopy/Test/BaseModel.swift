@@ -7,19 +7,19 @@
 //
 
 import UIKit
-import HandyJSON
+//import HandyJSON
 
-class BaseModel<T>: NSObject,HandyJSON {
-    var code:String?
-    var msg:String?
-    var data:T?
-    required override init(){}
-}
-
-class CodeMsgModel: NSObject,HandyJSON{
-    var code: Int = -1
-    var msg: String?
-    required override init(){}
-}
-
-
+//class BaseModel<T>: NSObject,HandyJSON {
+//    var code:String?
+//    var msg:String?
+//    var data:T?
+//    required override init(){}
+//}
+//
+//class CodeMsgModel: NSObject,HandyJSON{
+//    var code: Int = -1
+//    var msg: String?
+//    required override init(){}
+//}
+//
+//

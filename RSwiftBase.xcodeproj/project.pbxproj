@@ -57,6 +57,7 @@
 		73C6290E2AFCAC0300AB9F6E /* XPSwiftBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C629042AFCAC0200AB9F6E /* XPSwiftBase.framework */; };
 		73C629132AFCAC0300AB9F6E /* XPSwiftBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C629122AFCAC0300AB9F6E /* XPSwiftBaseTests.swift */; };
 		73C629142AFCAC0300AB9F6E /* XPSwiftBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 73C629062AFCAC0200AB9F6E /* XPSwiftBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D743E32C0FFCDD00A3F70A /* RCSwiftBasePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 73D743E22C0FFCDD00A3F70A /* RCSwiftBasePackage */; };
 		73D8EEC02A243E7400435E19 /* LikedCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8EEBD2A243E7400435E19 /* LikedCommand.swift */; };
 		73D8EEC12A243E7400435E19 /* CommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8EEBE2A243E7400435E19 /* CommandManager.swift */; };
 		73D8EEC22A243E7400435E19 /* XPCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8EEBF2A243E7400435E19 /* XPCommand.swift */; };
@@ -174,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D743E32C0FFCDD00A3F70A /* RCSwiftBasePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +558,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				73D743E22C0FFCDD00A3F70A /* RCSwiftBasePackage */,
+			);
 			productName = Example;
 			productReference = 7373C3582A147608000550FC /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -603,7 +608,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					7361CCDB27FECD6F0062147D = {
@@ -634,6 +639,8 @@
 				"zh-HK",
 			);
 			mainGroup = 7361CCD227FECD6F0062147D;
+			packageReferences = (
+			);
 			productRefGroup = 7361CCDD27FECD6F0062147D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1327,6 +1334,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		73D743E22C0FFCDD00A3F70A /* RCSwiftBasePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RCSwiftBasePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7361CCD327FECD6F0062147D /* Project object */;
 }

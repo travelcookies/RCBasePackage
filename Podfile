@@ -6,7 +6,7 @@ target 'RSwiftBase' do
   use_frameworks!
 
   # Pods for RSwiftBase
-  pod 'HandyJSON'
+#  pod 'HandyJSON'
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
   pod 'CocoaLumberjack/Swift'
