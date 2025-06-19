@@ -8,7 +8,8 @@
 
 import Foundation
 import UIKit
-extension UITableView {
+
+public extension XP where Base == UITableView {
     func rTableView(willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath, _ radius: CGFloat = 8.0) {
         // 圆角弧度半径
         let cornerRadius: CGFloat = radius
@@ -31,14 +32,14 @@ extension UITableView {
         // CGRectGetMidY: 返回对象中心点的Y坐标
 
         // 这里要判断分组列表中的第一行，每组section的第一行，每组section的中间行
-        if indexPath.row == 0 && indexPath.row == numberOfRows(inSection: indexPath.section) - 1 {
+        if indexPath.row == 0 && indexPath.row == base.numberOfRows(inSection: indexPath.section) - 1 {
             pathRef.addRoundedRect(in: bounds, cornerWidth: cornerRadius, cornerHeight: cornerRadius)
         } else if indexPath.row == 0 {
             pathRef.move(to: CGPoint(x: bounds.minX, y: bounds.maxY), transform: .identity)
             pathRef.addArc(tangent1End: CGPoint(x: bounds.minX, y: bounds.minY), tangent2End: CGPoint(x: bounds.midX, y: bounds.minY), radius: cornerRadius, transform: .identity)
             pathRef.addArc(tangent1End: CGPoint(x: bounds.maxX, y: bounds.minY), tangent2End: CGPoint(x: bounds.maxX, y: bounds.midY), radius: cornerRadius, transform: .identity)
             pathRef.addLine(to: CGPoint(x: bounds.maxX, y: bounds.maxY), transform: .identity)
-        } else if indexPath.row == (numberOfRows(inSection: indexPath.section) - 1) {
+        } else if indexPath.row == (base.numberOfRows(inSection: indexPath.section) - 1) {
             pathRef.move(to: CGPoint(x: bounds.minX, y: bounds.minY), transform: .identity)
             pathRef.addArc(tangent1End: CGPoint(x: bounds.minX, y: bounds.maxY), tangent2End: CGPoint(x: bounds.midX, y: bounds.maxY), radius: cornerRadius, transform: .identity)
             pathRef.addArc(tangent1End: CGPoint(x: bounds.maxX, y: bounds.maxY), tangent2End: CGPoint(x: bounds.maxX, y: bounds.midY), radius: cornerRadius, transform: .identity)

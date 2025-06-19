@@ -1,9 +1,13 @@
-
-// Copyright (c) 2022 NetEase, Inc.  All rights reserved.
-// Use of this source code is governed by a MIT license that can be found in the LICENSE file.
+//
+//  UIAlertController+Operation.swift
+//  RSwiftBase
+//
+//  Created by 林小鹏 on 2025/6/19.
+//
 
 import Foundation
 import UIKit
+
 extension UIAlertController {
     class func reconfimAlertView(title: String?, message: String?, confirm: @escaping () -> Void) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

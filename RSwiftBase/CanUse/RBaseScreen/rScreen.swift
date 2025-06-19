@@ -33,7 +33,13 @@ public struct rScreen {
     }
 
     /// 状态栏高度
-    public static func kStatusBarHeight() -> CGFloat {
+    public static var statusH: CGFloat {
+        vStatusHeight
+    }
+
+    private static var vStatusHeight = rScreen.kStatusBarHeight()
+
+    static func kStatusBarHeight() -> CGFloat {
         var statusBarHeight: CGFloat = 0
         if #available(iOS 13.0, *) {
             let window = UIApplication.shared.windows.first
@@ -72,8 +78,8 @@ extension rScreen {
 }
 
 extension rScreen {
-    /// statusHeight 状态栏高度
-    public static let statusHeight: CGFloat = kStatusBarHeight()
+    /// statusHeight 状态栏高度 系统用
+    public static let statusHeight: CGFloat = isFullScreen ? statusH : 20
     /// kNavBarHeight    导航栏高度
     public static let naviBarHeight: CGFloat = 44
     /// navigationBarHeight 状态栏 加 导航栏
@@ -83,5 +89,12 @@ extension rScreen {
     /// safeAreaBottom   安全范围底部高度
     public static let safeAreaBottom: CGFloat = isFullScreen ? 34 : 0
     /// safeAreaTop  安全范围头部高度
-    public static let safeAreaTop: CGFloat = isFullScreen ? statusHeight : 0
+    public static let safeAreaTop: CGFloat = isFullScreen ? 48 : 0
+
+    /// statusHeight 状态栏高度
+//    public static let statusGKHeight: CGFloat = isFullScreen ? GKNavigationBarConfigure.statusBarFrame.size.height : 20
+    /// navigationBarHeight 状态栏 加 导航栏
+//    public static let navigationGKBarHeight: CGFloat = statusGKHeight + naviBarHeight
+    /// navigationBarHeight  导航栏///使用条件:灵动岛导致 下移5.0
+//    public static let naviGKBarHeight: CGFloat = statusGKHeight - vStatusHeight + naviBarHeight
 }
